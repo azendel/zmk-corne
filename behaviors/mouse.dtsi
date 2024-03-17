@@ -21,10 +21,10 @@
 };
 
 // Move cursor
-#define mmv_lf mmv MOVE_LEFT
-#define mmv_rg mmv MOVE_RIGHT
 #define mmv_up mmv MOVE_UP
 #define mmv_dn mmv MOVE_DOWN
+#define mmv_lf mmv MOVE_LEFT
+#define mmv_rg mmv MOVE_RIGHT
 
 // Mouse buttons
 #define mkp_lf mkp LCLK
@@ -32,10 +32,10 @@
 #define mkp_rg mkp RCLK
 
 // Scroll wheel
-#define msc_lf msc SCROLL_LEFT
-#define msc_rg msc SCROLL_RIGHT
-#define msc_up msc SCROLL_UP
-#define msc_dn msc SCROLL_DOWN
+#define msc_up msc SCRL_UP
+#define msc_dn msc SCRL_DOWN
+#define msc_lf msc SCRL_LEFT
+#define msc_rg msc SCRL_RIGHT
 
 // Switch move/scroll on Ploopy Nano by pressing NumLock twice
 ZMK_BEHAVIOR(msc_tg, macro, bindings =
