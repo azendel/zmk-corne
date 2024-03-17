@@ -44,16 +44,9 @@ ZMK_BEHAVIOR(AE_L, macro_one_param, bindings = <&fr_ae>, <&macro_param_1to1>, <&
 ZMK_BEHAVIOR(OE_L, macro_one_param, bindings = <&fr_oe>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)          // Œ
 ZMK_BEHAVIOR(CEDIL, macro_one_param, bindings = <&kp RBKT>, <&macro_param_1to1>, <&to MACRO_PLACEHOLDER>;)       // Ç
 
-// QWERTY Homerow Mods
-ZMK_BEHAVIOR(E_GR_D, macro, bindings = <&kp APOS>, <&to QWE>;) // È
-ZMK_BEHAVIOR(I_CI_D, macro, bindings = <&fr_i_cf>, <&to QWE>;) // Î
-
 // Colemak Homerow Mods
 ZMK_BEHAVIOR(E_GR_C, macro, bindings = <&kp APOS>, <&to COL>;) // È
 ZMK_BEHAVIOR(I_CI_C, macro, bindings = <&fr_i_cf>, <&to COL>;) // Î
-
-// Ergo-L Homerow Mods
-ZMK_BEHAVIOR(E_CI_E, macro, bindings = <&fr_e_cf>, <&to ERG>;) // Ê
 
 
 // ` directly
@@ -84,13 +77,6 @@ ZMK_BEHAVIOR(AGRA, macro_two_param, bindings =
     <&to MACRO_PLACEHOLDER>;
 )
 
-// ` to input then to default layer
-ZMK_BEHAVIOR(AGRA_D, macro_one_param, bindings =
-    <&kp RA(LBKT)>,
-    <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to QWE>;
-)
 
 // ´ to input
 ZMK_BEHAVIOR(AIGU, macro_two_param, bindings =
@@ -119,13 +105,6 @@ ZMK_BEHAVIOR(CIRC, macro_two_param, bindings =
     <&to MACRO_PLACEHOLDER>;
 )
 
-// ^ to input then to default layer
-ZMK_BEHAVIOR(CIRC_D, macro_one_param, bindings = 
-    <&kp LBKT>,
-    <&macro_param_1to1>,
-    <&macro_tap &kp MACRO_PLACEHOLDER>,
-    <&to QWE>;
-)
 
 // Keypress then return to default layer
 ZMK_BEHAVIOR(KPD, macro_two_param, bindings =

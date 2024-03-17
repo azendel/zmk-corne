@@ -12,11 +12,6 @@ parse() {
 		-z "$ROOT/config/$KBD_NAME".keymap \
 		-l \
 		"Colemak" \
-		"Colemak Accents" \
-		"QWERTY" \
-		"QWERTY Accents" \
-		"Ergo-L" \
-		"Ergo-L Accents" \
 		"Symbols" \
 		"Navigation" \
 		"Numbers" \

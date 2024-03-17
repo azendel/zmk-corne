@@ -64,11 +64,6 @@ ZMK_BEHAVIOR(comma_semi, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: trema | shift + tap: grave
-ZMK_BEHAVIOR(trem_gr, mod_morph,
-    bindings = <&KPD ACC_TR ERG>, <&KPD ACC_GR ERG>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
 
 // tap: single apostrophe | shift + tap: double apostrophe
 ZMK_BEHAVIOR(sap_dap, mod_morph,

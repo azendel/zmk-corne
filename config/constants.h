@@ -7,11 +7,7 @@
 // Layers
 // Must match order in which they are defined
 #define COL 0
-#define CAC 1
-#define QWE 2
-#define QAC 3
-#define ERG 4
-#define EAC 5
+
 #define SYM 6
 #define NAV 7
 #define NUM 8
