@@ -7,12 +7,11 @@
 // Layers
 // Must match order in which they are defined
 #define COL 0
-
-#define SYM 6
-#define NAV 7
-#define NUM 8
-#define MOU 9
-#define GAM 10
+#define SYM 1
+#define NAV 2
+#define NUM 3
+#define MOU 4
+#define GAM 5
 
 // Modifier keys
 #define GL LGUI
