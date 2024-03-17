@@ -3,15 +3,6 @@
 ZMK firmware configuration for Corne and Urchin keyboards, optimized for
 English/French/Programming.
 
-![My Urchin 34 keys keyboard](images/urchin.jpg)
-
-Since the Corne (36 keys) and Urchin (34 keys) have similar layouts, both
-keyboards share the same configuration. The only exception is the combos using
-thumb keys, which are in their own files ([combos_34](behaviors/combos_34.dtsi)
-and [combos_36](behaviors/combos_36.dtsi)). Keyboards also have their own keymap
-files, but in pratice they use the same mappings. Both firmwares are generated
-simultaneously with Github Actions.
-
 ![My Corne 36 keys keyboard](images/corne36.jpg)
 
 ## Features
