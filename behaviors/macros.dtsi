@@ -18,3 +18,20 @@ ZMK_BEHAVIOR(TMUX_SESSION, macro, bindings =
     <&kp LS(SEMI)>,
     <&kp N &kp E &kp W &kp SPACE &kp MINUS &kp S &kp SPACE>;
 )
+
+
+ZMK_BEHAVIOR(ctrl_alt_up, macro,
+    bindings = <&kp CL &kp AL &kp UP>;
+)
+
+ZMK_BEHAVIOR(ctrl_alt_down, macro,
+    bindings = <&kp CL &kp AL &kp DOWN>;
+)
+
+ZMK_BEHAVIOR(ctrl_alt_left, macro,
+    bindings = <&kp CL &kp AL &kp LEFT>;
+)
+
+ZMK_BEHAVIOR(ctrl_alt_right, macro,
+    bindings = <&kp CL &kp AL &kp RIGHT>;
+)
