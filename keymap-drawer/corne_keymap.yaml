@@ -95,10 +95,10 @@ layers:
   - $$tabler:arrow-big-down$$
   - $$tabler:arrow-big-up$$
   - $$tabler:arrow-big-right$$
-  - {t: CTRL, s: '&mkp LEFT'}
-  - {t: CTRL, s: '&mkp DOWN'}
-  - {t: CTRL, s: '&mkp UP'}
-  - {t: CTRL, s: '&mkp RIGHT'}
+  - ''
+  - ''
+  - ''
+  - ''
   - PAGE DOWN
   - HOME
   - PAGE DOWN

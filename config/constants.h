@@ -9,9 +9,9 @@
 #define COL 0
 #define SYM 1
 #define NAV 2
-#define NUM 3
-#define FUNC 4
-#define MEDIA 5
+// # define NUM 3
+// # define FUNC 4
+// # define MEDIA 5
 
 // Modifier keys
 #define GL LGUI
