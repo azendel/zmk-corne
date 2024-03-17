@@ -10,10 +10,9 @@
 #define SYM 1
 #define NAV 2
 #define NUM 3
-#define MOU 4
-#define GAM 5
-#define FUNC 6
-#define MEDIA 7
+#define GAM 4
+#define FUNC 5
+#define MEDIA 6
 
 // Modifier keys
 #define GL LGUI

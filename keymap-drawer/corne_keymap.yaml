@@ -32,7 +32,7 @@ layers:
   - .
   - /
   - {t: '$$material:keyboard_tab$$', h: media}
-  - {t: '$$tabler:space$$', h: Mouse}
+  - {t: '$$tabler:space$$', h: function}
   - {t: ESC, h: Numbers, s: '$$material:left_click$$'}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
@@ -75,39 +75,39 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   Navigation:
-  - $$output-toggle$$
-  - ''
-  - ''
-  - ''
-  - $$bt-clear$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: GUI, h: sticky}
-  - $$tabler:player-track-prev-filled$$
-  - $$play-pause$$
-  - $$tabler:player-track-next-filled$$
-  - ''
+  - $$material:right_click$$
+  - $$click-middle$$
+  - $$material:left_click$$
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
+  - $$material:left_click$$
+  - LALT(LEFT)
+  - LALT(DOWN)
+  - LALT(UP)
+  - LALT(RIGHT)
+  - $$cursor-left$$
+  - $$cursor-down$$
+  - $$cursor-up$$
+  - $$cursor-right$$
+  - PAGE UP
+  - HOME
   - $$tabler:arrow-big-left$$
   - $$tabler:arrow-big-down$$
   - $$tabler:arrow-big-up$$
   - $$tabler:arrow-big-right$$
-  - INSERT
-  - $$bt-prev$$
-  - $$bt-next$$
-  - $$tabler:volume-2$$
-  - $$tabler:volume$$
-  - ''
+  - LCTRL(LALT(LEFT))
+  - LCTRL(LALT(DOWN))
+  - LCTRL(LALT(UP))
+  - LCTRL(LALT(LEFT))
+  - PAGE DOWN
   - HOME
   - PAGE DOWN
   - PAGE UP
   - END
   - SCROLL LOCK
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - GUI
+  - LSHFT(LGUI)
+  - SHIFT
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -148,7 +148,9 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   - .
-  Mouse:
+  Game: ['$$material:keyboard_tab$$', Q, W, E, R, '$$material:left_click$$', $$click-middle$$, '$$material:right_click$$', $$scroll$$, ALT, SHIFT, A, S, D, F, '1',
+    '2', '3', '4', '5', CTRL, Z, X, C, V, '6', '7', '8', '9', '0', ESC, '$$tabler:space$$', '$$material:keyboard_return$$', ESC, M, '']
+  function:
   - ''
   - ''
   - ''
@@ -184,83 +186,44 @@ layers:
   - $$material:left_click$$
   - ''
   - ''
-  - ''
-  Game: ['$$material:keyboard_tab$$', Q, W, E, R, '$$material:left_click$$', $$click-middle$$, '$$material:right_click$$', $$scroll$$, ALT, SHIFT, A, S, D, F, '1',
-    '2', '3', '4', '5', CTRL, Z, X, C, V, '6', '7', '8', '9', '0', ESC, '$$tabler:space$$', '$$material:keyboard_return$$', ESC, M, '']
-  function:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_RIGHT'
-  - $$cursor-left$$
-  - $$cursor-down$$
-  - $$cursor-up$$
-  - $$cursor-right$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$scroll$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: Colemak, h: toggle}
-  - $$material:right_click$$
-  - $$material:left_click$$
-  - ''
-  - ''
   - {type: held}
   media:
+  - $$output-toggle$$
+  - ''
+  - ''
+  - ''
+  - $$bt-clear$$
   - ''
   - ''
   - ''
   - ''
   - ''
+  - {t: GUI, h: sticky}
+  - $$tabler:player-track-prev-filled$$
+  - $$play-pause$$
+  - $$tabler:player-track-next-filled$$
   - ''
+  - $$tabler:arrow-big-left$$
+  - $$tabler:arrow-big-down$$
+  - $$tabler:arrow-big-up$$
+  - $$tabler:arrow-big-right$$
+  - INSERT
+  - $$bt-prev$$
+  - $$bt-next$$
+  - $$tabler:volume-2$$
+  - $$tabler:volume$$
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_RIGHT'
-  - $$cursor-left$$
-  - $$cursor-down$$
-  - $$cursor-up$$
-  - $$cursor-right$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$scroll$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: Colemak, h: toggle, type: held}
-  - $$material:right_click$$
-  - $$material:left_click$$
-  - ''
-  - ''
-  - ''
+  - HOME
+  - PAGE DOWN
+  - PAGE UP
+  - END
+  - SCROLL LOCK
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [21, 20]
   k: $$tabler:cut$$
@@ -299,10 +262,6 @@ combos:
 - p: [12, 11, 10]
   k: TMUX NEW SESSION
   l: [Colemak]
-  draw_separate: true
-- p: [3, 0]
-  k: {t: Mouse, h: toggle}
-  l: [Mouse, Colemak]
   draw_separate: true
 - p: [6, 9]
   k: {t: Game, h: toggle}
