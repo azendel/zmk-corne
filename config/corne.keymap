@@ -8,7 +8,6 @@
 #define HOST_OS LINUX // Needed for unicode international_chars
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../chars/french.dtsi"
 #include "../chars/math.dtsi"
 #include "../chars/typography.dtsi"
 #include "../behaviors/combos_36.dtsi"

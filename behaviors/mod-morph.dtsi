@@ -3,17 +3,7 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../config/constants.h"
 
-// tap: backspace | shift + tap: delete
-ZMK_BEHAVIOR(bspc_del, mod_morph,
-    bindings = <&kp BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
 
-// tap: backspace | shift + tap: delete | hold: nav layer
-ZMK_BEHAVIOR(bs_del_nav, mod_morph,
-    bindings = <&lt NAV BSPC>, <&kp DEL>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
 
 // tap: plus | shift + tap: minus
 ZMK_BEHAVIOR(plus_minus, mod_morph,
@@ -27,11 +17,6 @@ ZMK_BEHAVIOR(multi_div, mod_morph,
     mods = <(MOD_LSFT|MOD_RSFT)>;
 )
 
-// tap: dash | shift + tap: tilde
-ZMK_BEHAVIOR(dash_tilde, mod_morph,
-    bindings = <&kp MINUS>, <&kp TILDS>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
 
 // tap: comma | shift + tap: period
 ZMK_BEHAVIOR(comma_dot, mod_morph,
@@ -45,22 +30,3 @@ ZMK_BEHAVIOR(num_tab_clk, mod_morph,
     mods = <(MOD_LSFT|MOD_LCTL)>;
 )
 
-
-// tap: period | shift + tap: colon
-ZMK_BEHAVIOR(dot_col, mod_morph,
-    bindings = <&kp DOT>, <&kp COLON>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-// tap: comma | shift + tap: semi-colon
-ZMK_BEHAVIOR(comma_semi, mod_morph,
-    bindings = <&kp COMMA>, <&kp SEMI>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)
-
-
-// tap: single apostrophe | shift + tap: double apostrophe
-ZMK_BEHAVIOR(sap_dap, mod_morph,
-    bindings = <&kp SAPOS>, <&kp DAPOS>;
-    mods = <(MOD_LSFT|MOD_RSFT)>;
-)

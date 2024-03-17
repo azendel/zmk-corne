@@ -6,20 +6,6 @@
 #pragma once
 
 
-// Greater than or equal to: ' >= '
-ZMK_BEHAVIOR(GTE, macro, bindings =
-    <&kp SPACE>,
-    <&kp GRTHAN>, <&kp EQUAL>,
-    <&kp SPACE>;
-)
-
-// Less than or equal to: ' <= '
-ZMK_BEHAVIOR(LTE, macro, bindings =
-    <&kp SPACE>,
-    <&kp LETHAN>, <&kp EQUAL>,
-    <&kp SPACE>;
-)
-
 // Tmux command: TMUX + ;
 ZMK_BEHAVIOR(TMUX_CMD, macro, bindings =
     <&kp TMUX>,

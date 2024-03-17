@@ -1,23 +1,19 @@
 # ZMK Config
+Huge thanks to @urob and @JeffDess for their repositories, it helped a lot.
 
-ZMK firmware configuration for Corne and Urchin keyboards, optimized for
-English/French/Programming.
+ZMK firmware configuration for Corne keyboard, optimized for English/Programming.
 
 ![My Corne 36 keys keyboard](images/corne36.jpg)
 
 ## Features
 
-- QWERTY, [Colemak-DH](https://colemakmods.github.io/mod-dh/)
-  and [Ergo-L](https://ergol.org) layouts
-- French characters support with dead key and one accent layer per layout
+- [Colemak-DH](https://colemakmods.github.io/mod-dh/) layout
 - 5 columns with nice!nano v2 and nice!views
 - Home row mods
 - Mouse keys support
-- Gaming Layer (shifted WASD position, free of homerow mods)
-- Cursor/Scroll toggle with
-  [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
 - Easy to read files, thanks to the
   [zmk-nodefree-config](https://github.com/urob/zmk-nodefree-config) helper
+- keymap image generation
 
 ## Keymap
 
