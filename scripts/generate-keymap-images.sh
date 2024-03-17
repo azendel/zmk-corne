@@ -15,7 +15,6 @@ parse() {
 		"Symbols" \
 		"Navigation" \
 		"Numbers" \
-		"Game" \
 		"function" \
 		"media" >"$KMD/$KBD_NAME"_keymap.yaml \
 		; then
