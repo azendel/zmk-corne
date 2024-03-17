@@ -10,6 +10,7 @@
 #include "../zmk-nodefree-config/helper.h"
 #include "../chars/math.dtsi"
 #include "../chars/typography.dtsi"
+#include "../layouts/main.dtsi"
 #include "../behaviors/combos_36.dtsi"
 #include "../behaviors/hold-tap.dtsi"
 #include "../behaviors/macros.dtsi"
