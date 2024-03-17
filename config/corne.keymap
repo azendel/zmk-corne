@@ -11,7 +11,6 @@
 #include "../chars/french.dtsi"
 #include "../chars/math.dtsi"
 #include "../chars/typography.dtsi"
-#include "../layouts/canadian-multilingual-standard.dtsi"
 #include "../behaviors/combos_36.dtsi"
 #include "../behaviors/hold-tap.dtsi"
 #include "../behaviors/macros.dtsi"

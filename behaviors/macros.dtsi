@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
 #include "../config/constants.h"
-#include "../layouts/canadian-multilingual-standard.dtsi"
 
 #pragma once
 

@@ -53,8 +53,7 @@ English/French/Programming.
 | ![Bluetooth Next](images/icons/bt_next.svg)          | Next Bluetooth profile      |
 | ![Bluetooth Output Toggle](images/icons/out_tog.svg) | Toggle Bluetooth/USB output |
 
-For more details, head to the [urchin.keymap](config/urchin.keymap) or
-[corne.keymap](config/corne.keymap) source files.
+For more details, head to [corne.keymap](config/corne.keymap) and source files.
 
 ## Behaviors
 
@@ -65,23 +64,9 @@ The keymap uses a few behaviors in order to make everything work:
 - [Macros](behaviors/macros.dtsi)
 - [Mod-Morph](behaviors/mod-morph.dtsi)
 
-## Layouts
-
-The three alpha layers (QWERTY,
-[Colemak-DH](https://colemakmods.github.io/mod-dh/) and
-[Ergo-L](https://ergol.org)) are mapped to the
-[Canadian Multilingual Standard (CSA)](https://commons.wikimedia.org/wiki/File:KB_Canadian_Multilingual_Standard.svg),
-but it can easily be adapted to other layout by copying
-[canadian-multilingual-standard.dtsi](layouts/canadian-multilingual-standard.dtsi)
-and changing the macros accordingly. I've always used this layout, it's just
-more convenient for me to base my layout on it. This way I don't have to change
-whenever I switch keyboards.
-
-![Urchin with Nano Trackball](images/urchin-with-nano.jpg)
+## Layout
+[Colemak-DH](https://colemakmods.github.io/mod-dh/) 
 
 ## References
-
 - [Corne Keyboard](https://github.com/foostan/crkbd)
-- [Urchin Keyboard](https://github.com/duckyb/urchin)
-- [Ploopy Nano Trackball](https://github.com/ploopyco/nano-trackball)
 
