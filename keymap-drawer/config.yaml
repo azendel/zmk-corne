@@ -380,7 +380,7 @@ draw_config:
           <path fill="#fff" stroke="none" d="M1.6 3h2.72c.82 0 1.48.65 1.48 1.45V19.5c0 .8-.66 1.44-1.48 1.44h-2.7c-.82 0-1.48-.65-1.48-1.44V4.45C.14 3.65.8 3 1.61 3Z" style="fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"/>
       </svg>
   glyph_urls:
-    tabler: https://unpkg.com/@tabler/icons@2.44/icons/{}.svg
+    tabler: https://unpkg.com/@tabler/icons/icons/{}.svg
     mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
     mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
@@ -491,9 +491,9 @@ parse_config:
     "&msc_tg": "$$scroll$$",
     "&caps_word": "CAPS WORD",
     "&caps_lock": "CAPS LOCK",
-    "&kp LC(X)": "$$tabler:outline/cut$$",
-    "&kp LC(C)": "$$tabler:outline/copy$$",
-    "&kp LC(V)": "$$tabler:outline/clipboard$$",
+    "&kp LC(X)": "$$tabler:cut$$",
+    "&kp LC(C)": "$$tabler:copy$$",
+    "&kp LC(V)": "$$tabler:clipboard$$",
     "&kp LC(LA(J))": "TMUX",
     "&TMUX_SESSION": "TMUX NEW SESSION",
     "&TMUX_CMD": "TMUX COMMAND",
@@ -647,9 +647,9 @@ parse_config:
     NUHS: '#'
     TILDE2: '~'
     BSPC: '$$material:backspace$$'
-    SPACE: '$$tabler:outline/space$$'
+    SPACE: '$$tabler:space$$'
     TAB: "$$material:keyboard_tab$$"
-    PRINTSCREEN: "$$tabler:filled/camera$$"
+    PRINTSCREEN: "$$tabler:camera$$"
     RET: "$$material:keyboard_return$$"
     SLCK: 'SCROLL LOCK'
     INS: 'INSERT'
@@ -661,15 +661,15 @@ parse_config:
     LCTRL: 'CTRL'
     CAPSLOCK: 'CAPS LOCK'
     DEL: '$$delete$$'
-    C_VOL_UP: '$$tabler:outline/volume$$'
-    C_VOL_DN: '$$tabler:outline/volume-2$$'
+    C_VOL_UP: '$$tabler:volume$$'
+    C_VOL_DN: '$$tabler:volume-2$$'
     C_PP: '$$play-pause$$'
-    C_PREV: '$$tabler:filled/player-track-prev$$'
-    C_NEXT: '$$tabler:filled/player-track-next$$'
-    LEFT: '$$tabler:filled/arrow-big-left$$'
-    RIGHT: '$$tabler:filled/arrow-big-right$$'
-    UP: '$$tabler:filled/arrow-big-up$$'
-    DOWN: '$$tabler:filled/arrow-big-down$$'
+    C_PREV: '$$tabler:player-track-prev-filled$$'
+    C_NEXT: '$$tabler:player-track-next-filled$$'
+    LEFT: '$$tabler:arrow-big-left$$'
+    RIGHT: '$$tabler:arrow-big-right$$'
+    UP: '$$tabler:arrow-big-up$$'
+    DOWN: '$$tabler:arrow-big-down$$'
     BT_CLR: '$$bt-clear$$'
     BT_NXT: '$$bt-next$$'
     BT_PRV: '$$bt-prev$$'
