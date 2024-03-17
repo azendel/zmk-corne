@@ -21,7 +21,7 @@ English/French/Programming.
 
 ## Keymap
 
-![Keymap drawing of all layers and combos](images/keymaps/urchin_keymap.svg)
+![Keymap drawing of all layers and combos](images/keymaps/corne_keymap.svg)
 
 **Legend**
 

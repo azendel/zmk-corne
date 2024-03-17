@@ -5,19 +5,6 @@
 
 #pragma once
 
-// Fat arrow padded with spaces: ' => '
-ZMK_BEHAVIOR(FAT_ARROW, macro, bindings =
-    <&kp SPACE &kp EQUAL>,
-    <&kp RA(DOT)>,
-    <&kp SPACE>;
-)
-
-// Thin arrow padded with spaces: ' -> '
-ZMK_BEHAVIOR(ARROW, macro, bindings =
-    <&kp SPACE &kp MINUS>,
-    <&kp RA(DOT)>,
-    <&kp SPACE>;
-)
 
 // Greater than or equal to: ' >= '
 ZMK_BEHAVIOR(GTE, macro, bindings =
