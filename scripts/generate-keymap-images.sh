@@ -16,7 +16,9 @@ parse() {
 		"Navigation" \
 		"Numbers" \
 		"Mouse" \
-		"Game" >"$KMD/$KBD_NAME"_keymap.yaml \
+		"Game" \
+		"function" \
+		"media" >"$KMD/$KBD_NAME"_keymap.yaml \
 		; then
 		echo "Keymap Parsed"
 	else
@@ -40,3 +42,4 @@ KBD="corne"
 
 parse "$KBD"
 draw "$KBD" --keys-only
+cp images/keymaps/corne_keymap.svg /mnt/c/Users/user/Downloads/

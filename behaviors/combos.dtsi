@@ -57,18 +57,3 @@ ZMK_COMBO(toggle_mouse, &tog MOU, LT1 LT4, MOU COL)
 // Toggle Game Layer - active on base and game layer
 ZMK_COMBO(toggle_game, &tog GAM, RT1 RT4, GAM COL)
 
-/***********************
-  SYMBOL LAYER
-***********************/
-
-// FAT ARROW - Left index & middle fingers on home row, active on symbol layer
-ZMK_COMBO(fat_arrow, &FAT_ARROW, LM1 LM2, SYM)
-
-// THIN ARROW - Left index & middle fingers on bottom row, active on symbol layer
-ZMK_COMBO(arrow, &ARROW, LB1 LB2, SYM)
-
-// Lesser than or Equal - active on symbol layer
-ZMK_COMBO(lte, &LTE, RB1 RB2, SYM)
-
-// Greater than or Equal - active on symbol layer
-ZMK_COMBO(gte, &GTE, RB2 RB3, SYM)

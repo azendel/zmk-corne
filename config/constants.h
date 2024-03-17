@@ -12,6 +12,8 @@
 #define NUM 3
 #define MOU 4
 #define GAM 5
+#define FUNC 6
+#define MEDIA 7
 
 // Modifier keys
 #define GL LGUI
