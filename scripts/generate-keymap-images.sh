@@ -13,10 +13,7 @@ parse() {
 		-l \
 		"Colemak" \
 		"Symbols" \
-		"Navigation" \
-		"Numbers" \
-		"function" \
-		"media" >"$KMD/$KBD_NAME"_keymap.yaml \
+		"Navigation" >"$KMD/$KBD_NAME"_keymap.yaml \
 		; then
 		echo "Keymap Parsed"
 	else
