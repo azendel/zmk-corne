@@ -10,14 +10,14 @@
 
 &mmv {
     acceleration-exponent=<1>;
-    delay-ms=<50>;
-    time-to-max-speed-ms = <300>;
+    delay-ms=<10>;
+    time-to-max-speed-ms = <200>;
 };
 
 &msc {
-    acceleration-exponent=<1>;
-    delay-ms=<70>;
-    time-to-max-speed-ms = <200>;
+    acceleration-exponent=<2>;
+    delay-ms=<0>;
+    time-to-max-speed-ms = <100>;
 };
 
 // Move cursor
@@ -56,31 +56,16 @@ ZMK_COMBO(scrolltoggle, &msc_tg, LT2 LT3, COL)
 
 
 
-// fast mouse 
-//
-//
-&fmmv {
-    acceleration-exponent=<3>;
-    delay-ms=<10>;
-    time-to-max-speed-ms = <200>;
-};
-
-&fmsc {
-    acceleration-exponent=<3>;
-    delay-ms=<10>;
-    time-to-max-speed-ms = <200>;
-};
-
 // Move cursor
-#define fmmv_up fmmv MOVE_UP
-#define fmmv_dn fmmv MOVE_DOWN
-#define fmmv_lf fmmv MOVE_LEFT
-#define fmmv_rg fmmv MOVE_RIGHT
+#define fmmv_up mmv MOVE_UP
+#define fmmv_dn mmv MOVE_DOWN
+#define fmmv_lf mmv MOVE_LEFT
+#define fmmv_rg mmv MOVE_RIGHT
 
 // Scroll wheel
-#define fmsc_up fmsc SCRL_UP
-#define fmsc_dn fmsc SCRL_DOWN
-#define fmsc_lf fmsc SCRL_LEFT
-#define fmsc_rg fmsc SCRL_RIGHT
+#define fmsc_up msc SCRL_UP
+#define fmsc_dn msc SCRL_DOWN
+#define fmsc_lf msc SCRL_LEFT
+#define fmsc_rg msc SCRL_RIGHT
 
 // Switch move/scroll on Ploopy Nano by pressing NumLock twice

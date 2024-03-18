@@ -15,6 +15,6 @@
 ***********************/
 
 // TAB - Right thumbs, active on all alpha layers
-ZMK_COMBO(tab_34, &kp TAB, RH0 RH1, COL)
+ZMK_COMBO(tab_34, &kp TAB, RH0 RH2, COL)
 
 

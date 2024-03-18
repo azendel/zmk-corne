@@ -473,7 +473,6 @@ parse_config:
     "&math_1_2": "½",
     "&math_3_4": "¾",
     "&math_pm": "±",
-    "&kp DEG": "°",
     "&kp RA(RBKT)": "~",
     "&kp SLSH": "/",
     "&math_micro": "µ",
@@ -503,8 +502,6 @@ parse_config:
     "&FAT_ARROW": " => ",
     "&kp RALT(SPACE)": "$$nbsp$$",
     "&out OUT_TOG": '$$output-toggle$$',
-    "&kp SAPOS": "'",
-    "&kp DAPOS": '"'
     }
   sticky_label: sticky
   toggle_label: toggle

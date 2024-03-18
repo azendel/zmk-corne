@@ -33,7 +33,7 @@ layers:
   - /
   - {t: '$$material:keyboard_tab$$', h: alt switch}
   - {t: ESC, h: switch}
-  - {t: '$$tabler:space$$', h: Numbers, s: '$$material:keyboard_tab$$'}
+  - {t: '$$tabler:space$$', h: Numbers}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
   - {t: $$delete$$, h: function}
@@ -42,7 +42,7 @@ layers:
   - ']'
   - ':'
   - '|'
-  - ''
+  - CAPS LOCK
   - '~'
   - '&'
   - '*'
@@ -108,7 +108,7 @@ layers:
   - GUI
   - BETTER_NAV
   - SHIFT
-  - {type: held}
+  - {t: '$$material:keyboard_tab$$', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Numbers:
@@ -145,7 +145,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - CTRL
+  - function
   - GUI
   - ALT
   function:
@@ -181,8 +181,8 @@ layers:
   - $$bt-next$$
   - CTRL
   - GUI
-  - ALT
-  - {t: ▽, type: trans}
+  - {t: ALT, type: held}
+  - {type: held}
   - $$bt-clear$$
   - {type: held}
   switch:
@@ -205,7 +205,7 @@ layers:
   - '&ctrl_4'
   - '&ctrl_5'
   - '&ctrl_6'
-  - '0'
+  - '&ctrl_0'
   - ''
   - '&gui_1'
   - '&gui_2'
@@ -242,7 +242,7 @@ layers:
   - '&clsl_4'
   - '&clsl_5'
   - '&clsl_6'
-  - '0'
+  - '&clsl_0'
   - ''
   - '&alt_1'
   - '&alt_2'
@@ -263,20 +263,20 @@ layers:
   - $$material:right_click$$
   - $$click-middle$$
   - $$material:left_click$$
-  - '&fmsc SCRL_UP'
-  - '&fmsc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - $$material:left_click$$
   - ''
   - ''
   - ''
   - ''
-  - '&fmmv MOVE_LEFT'
-  - '&fmmv MOVE_DOWN'
-  - '&fmmv MOVE_UP'
-  - '&fmmv MOVE_RIGHT'
+  - $$cursor-left$$
+  - $$cursor-down$$
+  - $$cursor-up$$
+  - $$cursor-right$$
   - ''
   - ''
-  - '&win_left'
+  - '&win_LEFT'
   - '&win_DOWN'
   - '&win_UP'
   - '&win_RIGHT'
@@ -335,7 +335,7 @@ combos:
   k: TMUX NEW SESSION
   l: [Colemak]
   draw_separate: true
-- p: [33, 35]
+- p: [33, 32]
   k: $$material:keyboard_tab$$
   l: [Colemak]
   a: bottom
