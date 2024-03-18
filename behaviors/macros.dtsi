@@ -42,3 +42,37 @@ ZMK_BEHAVIOR(shift_gui, macro,
     bindings = <&kp SL &kp GL>;
 )
 
+
+ZMK_BEHAVIOR(alt_up, macro,
+    bindings = <&kp AL &kp UP>;
+)
+
+ZMK_BEHAVIOR(alt_down, macro,
+    bindings = <&kp AL &kp DOWN>;
+)
+
+ZMK_BEHAVIOR(alt_left, macro,
+    bindings = <&kp AL &kp LEFT>;
+)
+
+ZMK_BEHAVIOR(alt_right, macro,
+    bindings = <&kp AL &kp RIGHT>;
+)
+
+
+ZMK_BEHAVIOR(ctrl_up, macro,
+    bindings = <&kp CL &kp UP>;
+)
+
+ZMK_BEHAVIOR(ctrl_down, macro,
+    bindings = <&kp CL &kp DOWN>;
+)
+
+ZMK_BEHAVIOR(ctrl_left, macro,
+    bindings = <&kp CL &kp LEFT>;
+)
+
+ZMK_BEHAVIOR(ctrl_right, macro,
+    bindings = <&kp CL &kp RIGHT>;
+)
+
