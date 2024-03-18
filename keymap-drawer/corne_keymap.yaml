@@ -31,9 +31,9 @@ layers:
   - ','
   - .
   - /
-  - {t: '$$material:keyboard_tab$$', h: media}
-  - {t: '$$tabler:space$$', h: function}
-  - {t: ESC, h: Numbers}
+  - {t: '$$material:keyboard_tab$$', h: switch}
+  - {t: ESC, h: switch}
+  - {t: '$$tabler:space$$', h: Numbers, s: '$$material:keyboard_tab$$'}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
   - {t: $$delete$$, h: function}
@@ -62,8 +62,8 @@ layers:
   - '>'
   - '?'
   - '"'
-  - ''
   - \
+  - ''
   - '!'
   - '@'
   - '#'
@@ -106,7 +106,7 @@ layers:
   - '&ctrl_up'
   - '&ctrl_right'
   - GUI
-  - '&shift_gui'
+  - GUI
   - SHIFT
   - {type: held}
   - {t: ▽, type: trans}
@@ -149,29 +149,29 @@ layers:
   - GUI
   - ALT
   function:
-  - F1
-  - F2
-  - F3
-  - F4
+  - F7
+  - F8
+  - F9
+  - F10
   - F13
   - $$play-pause$$
   - $$tabler:player-track-prev-filled$$
   - $$tabler:volume-2$$
   - $$tabler:volume$$
   - $$tabler:player-track-next-filled$$
+  - F4
   - F5
   - F6
-  - F7
-  - F8
+  - F11
   - F14
   - ''
   - SHIFT
   - CTRL
   - ALT
   - GUI
-  - F9
-  - F10
-  - F11
+  - F1
+  - F2
+  - F3
   - F12
   - F15
   - $$output-toggle$$
@@ -180,48 +180,85 @@ layers:
   - ''
   - $$bt-next$$
   - CTRL
-  - {t: GUI, type: held}
+  - GUI
   - ALT
   - {t: ▽, type: trans}
   - $$bt-clear$$
   - {type: held}
-  media:
-  - $$output-toggle$$
+  switch:
   - ''
+  - '&gui_7'
+  - '&gui_8'
+  - '&gui_9'
   - ''
-  - ''
-  - $$bt-clear$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: GUI, h: sticky}
-  - $$tabler:player-track-prev-filled$$
-  - $$play-pause$$
-  - $$tabler:player-track-next-filled$$
-  - ''
-  - $$tabler:arrow-big-left$$
-  - $$tabler:arrow-big-down$$
-  - $$tabler:arrow-big-up$$
-  - $$tabler:arrow-big-right$$
   - INSERT
-  - $$bt-prev$$
-  - $$bt-next$$
-  - $$tabler:volume-2$$
-  - $$tabler:volume$$
+  - '&ctrl_7'
+  - '&ctrl_8'
+  - '&ctrl_9'
+  - +
   - ''
-  - HOME
-  - PAGE DOWN
-  - PAGE UP
-  - END
-  - SCROLL LOCK
+  - '&gui_4'
+  - '&gui_5'
+  - '&gui_6'
+  - SHIFT
+  - .
+  - '&ctrl_4'
+  - '&ctrl_5'
+  - '&ctrl_6'
+  - '0'
+  - ''
+  - '&gui_1'
+  - '&gui_2'
+  - '&gui_3'
+  - ''
+  - $$delete$$
+  - '&ctrl_1'
+  - '&ctrl_2'
+  - '&ctrl_3'
+  - '-'
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
+  - CTRL
+  - GUI
+  - ALT
+  alt switch:
+  - ''
+  - '&alt_7'
+  - '&alt_8'
+  - '&alt_9'
+  - ''
+  - INSERT
+  - '&clsl_7'
+  - '&clsl_8'
+  - '&clsl_9'
+  - +
+  - ''
+  - '&alt_4'
+  - '&alt_5'
+  - '&alt_6'
+  - SHIFT
+  - .
+  - '&clsl_4'
+  - '&clsl_5'
+  - '&clsl_6'
+  - '0'
+  - ''
+  - '&alt_1'
+  - '&alt_2'
+  - '&alt_3'
+  - ''
+  - $$delete$$
+  - '&clsl_1'
+  - '&clsl_2'
+  - '&clsl_3'
+  - '-'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - CTRL
+  - GUI
+  - ALT
 combos:
 - p: [21, 20]
   k: $$tabler:cut$$

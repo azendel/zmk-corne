@@ -22,26 +22,29 @@ ZMK_BEHAVIOR(TMUX_SESSION, macro, bindings =
 
 
 ZMK_BEHAVIOR(ctrl_alt_up, macro,
-    bindings = <&kp CL &kp AL &kp UP>;
+    bindings =<&macro_press  &kp CL>, <&macro_press  &kp AL>, <&macro_tap &kp UP>,<&macro_release &kp CL>, <&macro_release &kp AL>;
 )
 
 ZMK_BEHAVIOR(ctrl_alt_down, macro,
-    bindings = <&kp CL &kp AL &kp DOWN>;
+    bindings =<&macro_press  &kp CL>, <&macro_press  &kp AL>, <&macro_tap &kp DOWN>,<&macro_release &kp CL>, <&macro_release &kp AL>;
 )
 
 ZMK_BEHAVIOR(ctrl_alt_left, macro,
-    bindings = <&kp CL &kp AL &kp LEFT>;
+    bindings =<&macro_press  &kp CL>, <&macro_press  &kp AL>, <&macro_tap &kp LEFT>,<&macro_release &kp CL>, <&macro_release &kp AL>;
 )
 
 ZMK_BEHAVIOR(ctrl_alt_right, macro,
-    bindings = <&kp CL &kp AL &kp RIGHT>;
+    bindings =<&macro_press  &kp CL>, <&macro_press  &kp AL>, <&macro_tap &kp RIGHT>,<&macro_release &kp CL>, <&macro_release &kp AL>;
 )
 
 
 ZMK_BEHAVIOR(shift_gui, macro,
-    bindings = <&kp LSHIFT &kp LGUI>;
+    bindings = <&macro_press &kp SL>, <&macro_press  &kp GL>, <&macro_release &kp SL>, <&macro_release &kp GL>;
 )
 
+  //  bindings = <&kp SL &kp GL>;  -- not working, it ends up calling windows0
+//    bindings = <&macro_press &kp SL>, <&macro_press  &kp GL>, <&macro_release SL>, <&macro_release GL>;
+//    bindings = <&macro_press &kp SL &kp GL>;
 
 
 ZMK_BEHAVIOR(alt_up, macro,
@@ -61,19 +64,197 @@ ZMK_BEHAVIOR(alt_right, macro,
 )
 
 
+
 ZMK_BEHAVIOR(ctrl_up, macro,
-    bindings = <&kp CL &kp UP>;
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp UP>, <&macro_release &kp CL>;
 )
 
 ZMK_BEHAVIOR(ctrl_down, macro,
-    bindings = <&kp CL &kp DOWN>;
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp DOWN>, <&macro_release &kp CL>;
 )
 
 ZMK_BEHAVIOR(ctrl_left, macro,
-    bindings = <&kp CL &kp LEFT>;
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp LEFT>, <&macro_release &kp CL>; 
 )
 
 ZMK_BEHAVIOR(ctrl_right, macro,
-    bindings = <&kp CL &kp RIGHT>;
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp RIGHT>, <&macro_release &kp CL>;
+)
+
+
+
+// numbers switching
+
+ZMK_BEHAVIOR(ctrl_1, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N1>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_2, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N2>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_3, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N3>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_4, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N4>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_5, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N5>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_6, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N6>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_7, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N7>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_8, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N8>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_9, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N9>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(ctrl_0, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &kp N0>, <&macro_release &kp CL>;
+)
+
+
+
+
+ZMK_BEHAVIOR(gui_1, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N1>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_2, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N2>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_3, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N3>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_4, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N4>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_5, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N5>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_6, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N6>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_7, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N7>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_8, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N8>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_9, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N9>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(gui_0, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp N0>, <&macro_release &kp GL>;
+)
+
+
+
+
+
+
+
+
+
+ZMK_BEHAVIOR(clsl_1, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N1>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_2, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N2>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_3, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N3>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_4, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N4>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_5, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N5>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_6, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N6>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_7, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N7>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_8, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N8>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_9, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N9>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(clsl_0, macro,
+    bindings = <&macro_press &kp CL>, <&macro_press &kp SL>,  <&macro_tap &kp N0>, <&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
+
+
+ZMK_BEHAVIOR(alt_1, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N1>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_2, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N2>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_3, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N3>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_4, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N4>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_5, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N5>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_6, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N6>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_7, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N7>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_8, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N8>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_9, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N9>, <&macro_release &kp AL>;
+)
+
+ZMK_BEHAVIOR(alt_0, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &kp N0>, <&macro_release &kp AL>;
 )
 

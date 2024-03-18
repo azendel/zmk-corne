@@ -11,4 +11,9 @@
 
 
 
+// tap: space | shift + tap: tab | hold: nav layer
+ZMK_BEHAVIOR(spc_tab_num, mod_morph,
+    bindings = <&lt NUM SPACE>, <&kp TAB>;
+    mods = <(MOD_LSFT|MOD_RSFT)>;
+)
 

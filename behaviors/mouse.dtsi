@@ -9,9 +9,9 @@
 // Codes : https://github.com/zmkfirmware/zmk/blob/ee855f4d6736da4d696e74f7875d209c7c173a11/app/include/dt-bindings/zmk/mouse.h
 
 &mmv {
-    acceleration-exponent=<0>;
-    delay-ms=<60>;
-    time-to-max-speed-ms = <200>;
+    acceleration-exponent=<1>;
+    delay-ms=<50>;
+    time-to-max-speed-ms = <300>;
 };
 
 &msc {

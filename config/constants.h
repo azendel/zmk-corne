@@ -11,7 +11,8 @@
 #define NAV 2
 #define NUM 3
 #define FUNC 4
-#define MEDIA 5
+#define SWITCH 5
+#define ALT_SWITCH 5
 
 // Modifier keys
 #define GL LGUI
