@@ -145,46 +145,46 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - ALT
+  - CTRL
   - GUI
-  - .
+  - ALT
   function:
   - F1
   - F2
   - F3
   - F4
-  - ±
-  - ¼
-  - '7'
-  - '8'
-  - '9'
-  - '&multi_div'
+  - F13
+  - $$play-pause$$
+  - $$tabler:player-track-prev-filled$$
+  - $$tabler:volume-2$$
+  - $$tabler:volume$$
+  - $$tabler:player-track-next-filled$$
   - F5
   - F6
   - F7
   - F8
-  - °
-  - ½
-  - '4'
-  - '5'
-  - '6'
-  - '&plus_minus'
+  - F14
+  - ''
+  - SHIFT
+  - CTRL
+  - ALT
+  - GUI
   - F9
   - F10
   - F11
   - F12
-  - µ
-  - ¾
-  - '1'
-  - '2'
-  - '3'
-  - '&comma_dot'
+  - F15
+  - $$output-toggle$$
+  - $$bt-prev$$
+  - ''
+  - ''
+  - $$bt-next$$
+  - CTRL
+  - {t: GUI, type: held}
+  - ALT
   - {t: ▽, type: trans}
+  - $$bt-clear$$
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ., type: held}
   media:
   - $$output-toggle$$
   - ''
