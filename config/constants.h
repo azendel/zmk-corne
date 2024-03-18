@@ -7,7 +7,7 @@
 // Layers
 // Must match order in which they are defined
 #define COL 0
-// # define SYM 1
+#define SYM 1
 // # define NAV 2
 // # define NUM 3
 // # define FUNC 4
