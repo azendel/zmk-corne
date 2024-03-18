@@ -17,7 +17,8 @@ parse() {
 		"Numbers" \
 		"function" \
 		"switch" \
-		"alt switch" >"$KMD/$KBD_NAME"_keymap.yaml \
+		"alt switch" \
+		"BETTER_NAV" >"$KMD/$KBD_NAME"_keymap.yaml \
 		; then
 		echo "Keymap Parsed"
 	else

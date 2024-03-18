@@ -39,12 +39,14 @@ ZMK_BEHAVIOR(ctrl_alt_right, macro,
 
 
 ZMK_BEHAVIOR(shift_gui, macro,
-    bindings = <&macro_press &kp SL>, <&macro_press  &kp GL>, <&macro_release &kp SL>, <&macro_release &kp GL>;
+    bindings = <&macro_press &kp SL &kp GL>, <&macro_release &kp SL &kp GL>;
 )
 
   //  bindings = <&kp SL &kp GL>;  -- not working, it ends up calling windows0
 //    bindings = <&macro_press &kp SL>, <&macro_press  &kp GL>, <&macro_release SL>, <&macro_release GL>;
-//    bindings = <&macro_press &kp SL &kp GL>;
+//    bindings = <&macro_press &kp SL &kp GL>; // terrible idea it will keep it pressed
+//    move it layer? it will work for sure
+//    bindings = <&macro_press &kp SL>,   &kp GL>, <&macro_release &kp SL>, <&macro_release &kp GL>;
 
 
 ZMK_BEHAVIOR(alt_up, macro,
@@ -256,5 +258,26 @@ ZMK_BEHAVIOR(alt_9, macro,
 
 ZMK_BEHAVIOR(alt_0, macro,
     bindings = <&macro_press &kp AL>,  <&macro_tap &kp N0>, <&macro_release &kp AL>;
+)
+
+
+
+
+
+
+ZMK_BEHAVIOR(win_LEFT, macro,
+    bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp LEFT>, <&macro_release &kp GL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(win_RIGHT, macro,
+    bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp RIGHT>, <&macro_release &kp GL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(win_UP, macro,
+    bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp UP>, <&macro_release &kp GL>, <&macro_release &kp SL>;
+)
+
+ZMK_BEHAVIOR(win_DOWN, macro,
+    bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp DOWN>, <&macro_release &kp GL>, <&macro_release &kp SL>;
 )
 

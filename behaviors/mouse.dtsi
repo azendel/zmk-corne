@@ -52,3 +52,35 @@ ZMK_COMBO(rightclick, &mkp RCLK, LT3 LT4, COL)
 
 // Mouse Scroll Toggle -  Middle and Ring finger of left hand, active on all layers
 ZMK_COMBO(scrolltoggle, &msc_tg, LT2 LT3, COL)
+
+
+
+
+// fast mouse 
+//
+//
+&fmmv {
+    acceleration-exponent=<3>;
+    delay-ms=<10>;
+    time-to-max-speed-ms = <200>;
+};
+
+&fmsc {
+    acceleration-exponent=<3>;
+    delay-ms=<10>;
+    time-to-max-speed-ms = <200>;
+};
+
+// Move cursor
+#define fmmv_up fmmv MOVE_UP
+#define fmmv_dn fmmv MOVE_DOWN
+#define fmmv_lf fmmv MOVE_LEFT
+#define fmmv_rg fmmv MOVE_RIGHT
+
+// Scroll wheel
+#define fmsc_up fmsc SCRL_UP
+#define fmsc_dn fmsc SCRL_DOWN
+#define fmsc_lf fmsc SCRL_LEFT
+#define fmsc_rg fmsc SCRL_RIGHT
+
+// Switch move/scroll on Ploopy Nano by pressing NumLock twice
