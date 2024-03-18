@@ -33,7 +33,7 @@ layers:
   - /
   - {t: '$$material:keyboard_tab$$', h: media}
   - {t: '$$tabler:space$$', h: function}
-  - {t: '$$material:keyboard_tab$$', h: Numbers}
+  - {t: ESC, h: Numbers}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
   - {t: $$delete$$, h: function}
@@ -58,8 +58,8 @@ layers:
   - '%'
   - ^
   - )
-  - '>'
   - <
+  - '>'
   - '?'
   - '"'
   - ''
