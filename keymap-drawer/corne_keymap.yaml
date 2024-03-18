@@ -33,7 +33,7 @@ layers:
   - /
   - {t: '$$material:keyboard_tab$$', h: media}
   - {t: '$$tabler:space$$', h: function}
-  - '&num_tab_clk'
+  - {t: '$$material:keyboard_tab$$', h: Numbers}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
   - {t: $$delete$$, h: function}
@@ -112,6 +112,43 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Numbers:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INSERT
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - GUI
+  - ALT
+  - CTRL
+  - SHIFT
+  - ''
+  - .
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$delete$$
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ALT
+  - GUI
+  - .
+  function:
   - F1
   - F2
   - F3
@@ -125,7 +162,7 @@ layers:
   - F5
   - F6
   - F7
-  - {t: F8, h: SHIFT}
+  - F8
   - °
   - ½
   - '4'
@@ -143,48 +180,11 @@ layers:
   - '3'
   - '&comma_dot'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - .
-  function:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
-  - '&msc SCRL_RIGHT'
-  - $$cursor-left$$
-  - $$cursor-down$$
-  - $$cursor-up$$
-  - $$cursor-right$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$scroll$$
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: Colemak, h: toggle}
-  - {t: '$$material:right_click$$', type: held}
-  - $$material:left_click$$
-  - ''
-  - ''
-  - {type: held}
+  - {t: ., type: held}
   media:
   - $$output-toggle$$
   - ''
