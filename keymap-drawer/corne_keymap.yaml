@@ -36,7 +36,7 @@ layers:
   - {t: '$$tabler:space$$', h: Numbers}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
-  - {t: $$delete$$, h: function}
+  - ''
   Symbols:
   - '['
   - ']'
@@ -49,7 +49,7 @@ layers:
   - (
   - +
   - '{'
-  - '}'
+  - '{'
   - _
   - '='
   - ''''
@@ -105,7 +105,7 @@ layers:
   - '&ctrl_down'
   - '&ctrl_up'
   - '&ctrl_right'
-  - GUI
+  - ''
   - BETTER_NAV
   - SHIFT
   - {t: '$$material:keyboard_tab$$', type: held}
@@ -116,8 +116,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - INSERT
+  - CONTEXT MENU
+  - $$delete$$
   - '7'
   - '8'
   - '9'
@@ -137,7 +137,7 @@ layers:
   - ''
   - ''
   - ''
-  - $$delete$$
+  - INSERT
   - '1'
   - '2'
   - '3'
@@ -146,8 +146,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - function
-  - GUI
-  - ALT
+  - ''
+  - ''
   function:
   - F7
   - F8
@@ -179,12 +179,12 @@ layers:
   - ''
   - ''
   - $$bt-next$$
-  - CTRL
+  - ''
   - GUI
   - {t: ALT, type: held}
   - {type: held}
   - $$bt-clear$$
-  - {type: held}
+  - {t: ▽, type: trans}
   switch:
   - ''
   - '&gui_7'
@@ -221,7 +221,7 @@ layers:
   - {t: ▽, type: trans}
   - CTRL
   - GUI
-  - ALT
+  - ''
   alt switch:
   - ''
   - '&alt_7'
@@ -258,7 +258,7 @@ layers:
   - {t: ▽, type: trans}
   - CTRL
   - GUI
-  - ALT
+  - ''
   BETTER_NAV:
   - $$material:right_click$$
   - $$click-middle$$
@@ -267,8 +267,8 @@ layers:
   - '&msc SCRL_DOWN'
   - $$material:left_click$$
   - ''
-  - ''
-  - ''
+  - '&cl_mkp_lf'
+  - '&al_mkp_lf'
   - ''
   - $$cursor-left$$
   - $$cursor-down$$
@@ -276,26 +276,26 @@ layers:
   - $$cursor-right$$
   - ''
   - ''
+  - '&shift_win_LEFT'
+  - '&shift_win_DOWN'
+  - '&shift_win_UP'
+  - '&shift_win_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&win_LEFT'
   - '&win_DOWN'
   - '&win_UP'
   - '&win_RIGHT'
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
   - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
 combos:
 - p: [21, 20]
   k: $$tabler:cut$$
@@ -319,6 +319,9 @@ combos:
   k: CAPS WORD
   l: [Colemak]
   draw_separate: true
+- p: [1, 6]
+  k: SHIFT
+  l: [Colemak]
 - p: [12, 17]
   k: CAPS LOCK
   l: [Colemak]

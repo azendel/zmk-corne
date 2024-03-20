@@ -265,19 +265,36 @@ ZMK_BEHAVIOR(alt_0, macro,
 
 
 
-ZMK_BEHAVIOR(win_LEFT, macro,
+ZMK_BEHAVIOR(shift_win_LEFT, macro,
     bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp LEFT>, <&macro_release &kp GL>, <&macro_release &kp SL>;
 )
 
-ZMK_BEHAVIOR(win_RIGHT, macro,
+ZMK_BEHAVIOR(shift_win_RIGHT, macro,
     bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp RIGHT>, <&macro_release &kp GL>, <&macro_release &kp SL>;
 )
 
-ZMK_BEHAVIOR(win_UP, macro,
+ZMK_BEHAVIOR(shift_win_UP, macro,
     bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp UP>, <&macro_release &kp GL>, <&macro_release &kp SL>;
 )
 
-ZMK_BEHAVIOR(win_DOWN, macro,
+ZMK_BEHAVIOR(shift_win_DOWN, macro,
     bindings = <&macro_press &kp GL>, <&macro_press &kp SL>,  <&macro_tap &kp DOWN>, <&macro_release &kp GL>, <&macro_release &kp SL>;
+)
+
+
+ZMK_BEHAVIOR(win_LEFT, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp LEFT>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(win_RIGHT, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp RIGHT>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(win_UP, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp UP>, <&macro_release &kp GL>;
+)
+
+ZMK_BEHAVIOR(win_DOWN, macro,
+    bindings = <&macro_press &kp GL>,  <&macro_tap &kp DOWN>, <&macro_release &kp GL>;
 )
 

@@ -20,6 +20,7 @@
     time-to-max-speed-ms = <100>;
 };
 
+
 // Move cursor
 #define mmv_up mmv MOVE_UP
 #define mmv_dn mmv MOVE_DOWN
@@ -56,16 +57,40 @@ ZMK_COMBO(scrolltoggle, &msc_tg, LT2 LT3, COL)
 
 
 
+ZMK_BEHAVIOR(cl_mkp_lf, macro,
+    bindings = <&macro_press &kp CL>,  <&macro_tap &mkp_lf>, <&macro_release &kp CL>;
+)
+
+ZMK_BEHAVIOR(al_mkp_lf, macro,
+    bindings = <&macro_press &kp AL>,  <&macro_tap &mkp_lf>, <&macro_release &kp AL>;
+)
+
+
+#define FAST_MOUSE_SCRL_VAL 30
+#define FAST_MOUSE_MOVE_VAL 1800
+
+
+#define FMOVE_UP MOVE_Y(-FAST_MOUSE_MOVE_VAL)
+#define FMOVE_DOWN MOVE_Y(FAST_MOUSE_MOVE_VAL)
+#define FMOVE_LEFT MOVE_X(-FAST_MOUSE_MOVE_VAL)
+#define FMOVE_RIGHT MOVE_X(FAST_MOUSE_MOVE_VAL)
+
+
+
+#define FSCRL_UP MOVE_Y(FAST_MOUSE_SCRL_VAL)
+#define FSCRL_DOWN MOVE_Y(-FAST_MOUSE_SCRL_VAL)
+#define FSCRL_LEFT MOVE_X(-FAST_MOUSE_SCRL_VAL)
+#define FSCRL_RIGHT MOVE_X(FAST_MOUSE_SCRL_VAL)
+
 // Move cursor
-#define fmmv_up mmv MOVE_UP
-#define fmmv_dn mmv MOVE_DOWN
-#define fmmv_lf mmv MOVE_LEFT
-#define fmmv_rg mmv MOVE_RIGHT
+#define fmmv_up mmv FMOVE_UP
+#define fmmv_dn mmv FMOVE_DOWN
+#define fmmv_lf mmv FMOVE_LEFT
+#define fmmv_rg mmv FMOVE_RIGHT
 
 // Scroll wheel
-#define fmsc_up msc SCRL_UP
-#define fmsc_dn msc SCRL_DOWN
-#define fmsc_lf msc SCRL_LEFT
-#define fmsc_rg msc SCRL_RIGHT
+#define fmsc_up msc FSCRL_UP
+#define fmsc_dn msc FSCRL_DOWN
+#define fmsc_lf msc FSCRL_LEFT
+#define fmsc_rg msc FSCRL_RIGHT
 
-// Switch move/scroll on Ploopy Nano by pressing NumLock twice
