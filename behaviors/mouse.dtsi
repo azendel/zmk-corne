@@ -21,7 +21,7 @@
 };
 
 #define MOUSE_SCRL_VAL 15
-#define MOUSE_MOVE_VAL 1200
+#define MOUSE_MOVE_VAL 900
 
 
 #define MOVE_UP MOVE_Y(-MOUSE_MOVE_VAL)
@@ -81,7 +81,7 @@ ZMK_BEHAVIOR(al_mkp_lf, macro,
 
 
 #define FAST_MOUSE_SCRL_VAL 30
-#define FAST_MOUSE_MOVE_VAL 2400
+#define FAST_MOUSE_MOVE_VAL 3200
 
 
 #define FMOVE_UP MOVE_Y(-FAST_MOUSE_MOVE_VAL)

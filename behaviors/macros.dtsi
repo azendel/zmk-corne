@@ -38,6 +38,20 @@ ZMK_BEHAVIOR(ctrl_alt_right, macro,
 )
 
 
+ZMK_BEHAVIOR(chinese_a, macro,
+    bindings = <&kp SL &kp AL>;
+)
+
+
+ZMK_BEHAVIOR(chinese_b, macro,
+    bindings = <&macro_press &kp SL &kp AL>, <&macro_release &kp SL &kp AL>;
+)
+
+ZMK_BEHAVIOR(chinese_c, macro,
+    bindings = <&macro_press &kp SL &kp AL>, <&macro_release &kp SL &kp AL>;
+)
+
+
 ZMK_BEHAVIOR(shift_gui, macro,
     bindings = <&macro_press &kp SL &kp GL>, <&macro_release &kp SL &kp GL>;
 )
