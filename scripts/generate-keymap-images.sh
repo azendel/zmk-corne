@@ -18,6 +18,7 @@ parse() {
 		"function" \
 		"switch" \
 		"alt switch" \
+		"win switch" \
 		"BETTER_NAV" >"$KMD/$KBD_NAME"_keymap.yaml \
 		; then
 		echo "Keymap Parsed"

@@ -36,7 +36,7 @@ layers:
   - {t: '$$tabler:space$$', h: Numbers}
   - {t: '$$material:keyboard_return$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
-  - ''
+  - win switch
   Symbols:
   - '['
   - ']'
@@ -78,8 +78,8 @@ layers:
   - $$material:right_click$$
   - $$click-middle$$
   - $$material:left_click$$
-  - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
+  - '&msc MOVE_Y(15)'
+  - '&msc MOVE_Y(-15)'
   - $$material:left_click$$
   - '&alt_left'
   - '&alt_down'
@@ -106,17 +106,17 @@ layers:
   - '&ctrl_up'
   - '&ctrl_right'
   - ''
-  - BETTER_NAV
   - SHIFT
+  - BETTER_NAV
   - {t: '$$material:keyboard_tab$$', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Numbers:
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&chinese_a'
+  - '&chinese_b'
+  - '&chinese_c'
   - CONTEXT MENU
+  - ''
   - $$delete$$
   - '7'
   - '8'
@@ -181,7 +181,7 @@ layers:
   - $$bt-next$$
   - ''
   - GUI
-  - {t: ALT, type: held}
+  - {type: held}
   - {type: held}
   - $$bt-clear$$
   - {t: ▽, type: trans}
@@ -224,56 +224,93 @@ layers:
   - ''
   alt switch:
   - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - '&alt_7'
   - '&alt_8'
   - '&alt_9'
   - ''
-  - INSERT
-  - '&clsl_7'
-  - '&clsl_8'
-  - '&clsl_9'
-  - +
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - '&alt_4'
   - '&alt_5'
   - '&alt_6'
-  - SHIFT
-  - .
-  - '&clsl_4'
-  - '&clsl_5'
-  - '&clsl_6'
-  - '&clsl_0'
+  - '&alt_0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - '&alt_1'
   - '&alt_2'
   - '&alt_3'
   - ''
-  - $$delete$$
-  - '&clsl_1'
-  - '&clsl_2'
-  - '&clsl_3'
-  - '-'
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CTRL
   - GUI
   - ''
+  win switch:
+  - ''
+  - '&clsl_7'
+  - '&clsl_8'
+  - '&clsl_9'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&clsl_4'
+  - '&clsl_5'
+  - '&clsl_6'
+  - '&clsl_0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&clsl_1'
+  - '&clsl_2'
+  - '&clsl_3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {type: held}
   BETTER_NAV:
   - $$material:right_click$$
   - $$click-middle$$
   - $$material:left_click$$
-  - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
+  - '&msc MOVE_Y(30)'
+  - '&msc MOVE_Y(-30)'
   - $$material:left_click$$
   - ''
   - '&cl_mkp_lf'
   - '&al_mkp_lf'
   - ''
-  - $$cursor-left$$
-  - $$cursor-down$$
-  - $$cursor-up$$
-  - $$cursor-right$$
+  - '&mmv MOVE_X(-3200)'
+  - '&mmv MOVE_Y(3200)'
+  - '&mmv MOVE_Y(-3200)'
+  - '&mmv MOVE_X(3200)'
   - ''
   - ''
   - '&shift_win_LEFT'
@@ -291,8 +328,8 @@ layers:
   - '&win_UP'
   - '&win_RIGHT'
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - {type: held}
   - ''
   - ''

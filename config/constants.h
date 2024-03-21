@@ -13,7 +13,8 @@
 #define FUNC 4
 #define SWITCH 5
 #define ALT_SWITCH 6
-#define BETTER_NAV 7
+#define BOOK_SWITCH 7
+#define BETTER_NAV 8
 
 // Modifier keys
 #define GL LGUI
