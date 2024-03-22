@@ -112,9 +112,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Numbers:
-  - '&chinese_a'
-  - '&chinese_b'
-  - '&chinese_c'
+  - ''
+  - ''
+  - '&chinese'
   - CONTEXT MENU
   - ''
   - $$delete$$
@@ -176,8 +176,8 @@ layers:
   - F15
   - $$output-toggle$$
   - $$bt-prev$$
-  - ''
-  - ''
+  - EP ON
+  - EP TOG
   - $$bt-next$$
   - ''
   - GUI
@@ -186,7 +186,7 @@ layers:
   - $$bt-clear$$
   - {t: ▽, type: trans}
   switch:
-  - ''
+  - '&lock'
   - '&gui_7'
   - '&gui_8'
   - '&gui_9'
