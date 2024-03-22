@@ -12,23 +12,7 @@
 #define CONFIG_ZMK_MACRO_QWEAULT_TAP_MS 40
 
 
-// ` directly
-ZMK_BEHAVIOR(GRA, macro, bindings =
-    <&macro_press &kp RALT>,
-    <&macro_tap &kp LBKT &kp LBKT>,
-    <&macro_release &kp RALT>;
-)
 
-// ^ directly
-ZMK_BEHAVIOR(CAR, macro, bindings =
-    <&macro_tap &kp LBKT &kp SPACE>;
-)
 
-// ¨ directly
-ZMK_BEHAVIOR(TREMA, macro_one_param, bindings =
-    <&macro_tap &kp LS(LBKT) &kp SPACE>,
-    <&macro_param_1to1>,
-    <&to MACRO_PLACEHOLDER>;
-)
 
 
