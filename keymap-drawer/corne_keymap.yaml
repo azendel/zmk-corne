@@ -11,7 +11,7 @@ layers:
   - U
   - Y
   - ;
-  - {t: A, h: GUI}
+  - A
   - {t: R, h: ALT}
   - {t: S, h: CTRL}
   - {t: T, h: SHIFT}
@@ -20,7 +20,7 @@ layers:
   - {t: N, h: RSHFT}
   - {t: E, h: CTRL}
   - {t: I, h: RALT}
-  - {t: O, h: GUI}
+  - O
   - Z
   - X
   - C
@@ -223,7 +223,7 @@ layers:
   - GUI
   - ''
   alt switch:
-  - ''
+  - '&lock_win'
   - ''
   - ''
   - ''

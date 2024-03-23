@@ -44,6 +44,9 @@ ZMK_BEHAVIOR(chinese, macro,
     bindings = <&macro_press &kp SL &kp AL>, <&macro_release &kp SL &kp AL>;
 )
 
+ZMK_BEHAVIOR(lock_win, macro,
+    bindings = <&macro_press &kp GL>, <&macro_tap &kp L>,  <&macro_release &kp GL >;
+)
 
 ZMK_BEHAVIOR(lock, macro,
     bindings = <&macro_press &kp GL>,<&macro_press &kp L> ,<&macro_release &kp GL>;
