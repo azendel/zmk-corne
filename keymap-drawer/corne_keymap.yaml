@@ -42,7 +42,7 @@ layers:
   - ']'
   - ':'
   - '|'
-  - CAPS LOCK
+  - ''
   - '~'
   - '&'
   - '*'
@@ -115,7 +115,7 @@ layers:
   - ''
   - ''
   - '&chinese'
-  - CONTEXT MENU
+  - CAPS LOCK
   - ''
   - $$delete$$
   - '7'
@@ -135,7 +135,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - CONTEXT MENU
   - ''
   - INSERT
   - '1'
@@ -352,17 +352,6 @@ combos:
   a: top
   o: -0.7
   d: false
-- p: [13, 16]
-  k: CAPS WORD
-  l: [Colemak]
-  draw_separate: true
-- p: [1, 6]
-  k: SHIFT
-  l: [Colemak]
-- p: [12, 17]
-  k: CAPS LOCK
-  l: [Colemak]
-  draw_separate: true
 - p: [12, 11]
   k: TMUX
   l: [Colemak]
