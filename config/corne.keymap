@@ -124,7 +124,7 @@ ZMK_LAYER_5COL(Book_switch,
 
 ZMK_LAYER_5COL(Better_nav,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-    &mkp_rg     &mkp_md      &mkp_lf    &fmsc_up     &fmsc_dn       &mkp_lf      XXX            &cl_mkp_lf   &al_mkp_lf           XXX     
+    &mkp_rg     &mkp_md      &mkp_lf    &fmsc_up     &fmsc_dn       &mkp_lf      &fmsc_lf            &cl_mkp_lf   &al_mkp_lf           &fmsc_rg     
 // ├───────────┼───────────┼───────────┼────────────┼───────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
     &fmmv_lf     &fmmv_dn       &fmmv_up     &fmmv_rg   XXX             XXX      &shift_win_LEFT    &shift_win_DOWN      &shift_win_UP     &shift_win_RIGHT
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤

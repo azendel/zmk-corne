@@ -303,10 +303,10 @@ layers:
   - '&msc MOVE_Y(30)'
   - '&msc MOVE_Y(-30)'
   - $$material:left_click$$
-  - ''
+  - '&msc MOVE_X(-30)'
   - '&cl_mkp_lf'
   - '&al_mkp_lf'
-  - ''
+  - '&msc MOVE_X(30)'
   - '&mmv MOVE_X(-3200)'
   - '&mmv MOVE_Y(3200)'
   - '&mmv MOVE_Y(-3200)'
