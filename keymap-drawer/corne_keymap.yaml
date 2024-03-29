@@ -31,12 +31,12 @@ layers:
   - ','
   - .
   - /
-  - {t: '$$material:keyboard_tab$$', h: alt switch}
+  - $$material:keyboard_tab$$
   - LSHIFT
   - {t: '$$tabler:space$$', h: Numbers}
   - {t: RETURN, h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
-  - switch
+  - ''
   Symbols:
   - '['
   - ']'
@@ -221,12 +221,12 @@ layers:
   - {type: held}
   - CTRL
   - {t: GUI, type: held}
-  - {type: held}
+  - ''
   alt switch:
   - '&lock_win'
-  - ''
-  - ''
-  - ''
+  - '&clsl_7'
+  - '&clsl_8'
+  - '&clsl_9'
   - ''
   - ''
   - '&alt_7'
@@ -234,33 +234,33 @@ layers:
   - '&alt_9'
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&clsl_4'
+  - '&clsl_5'
+  - '&clsl_6'
+  - '&clsl_0'
   - ''
   - '&alt_4'
   - '&alt_5'
   - '&alt_6'
   - '&alt_0'
   - ''
-  - ''
-  - ''
-  - ''
+  - '&clsl_1'
+  - '&clsl_2'
+  - '&clsl_3'
   - ''
   - ''
   - '&alt_1'
-  - '&alt_2'
-  - '&alt_3'
+  - {t: '&alt_2', type: held}
+  - {t: '&alt_3', type: held}
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CTRL
   - GUI
   - ''
   win switch:
-  - ''
+  - '&lock_win'
   - '&clsl_7'
   - '&clsl_8'
   - '&clsl_9'
@@ -369,6 +369,9 @@ combos:
   l: [Colemak]
 - p: [1, 2]
   k: ESC
+  l: [Colemak]
+- p: [28, 27]
+  k: {t: alt switch, h: sticky}
   l: [Colemak]
 - p: [33, 32]
   k: $$material:keyboard_tab$$
