@@ -78,7 +78,7 @@ layers:
   - $$material:right_click$$
   - $$click-middle$$
   - $$material:left_click$$
-  - $$material:backspace$$
+  - '&ctrl_bspc'
   - $$material:backspace$$
   - $$material:left_click$$
   - '&alt_left'
