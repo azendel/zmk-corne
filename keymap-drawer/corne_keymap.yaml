@@ -32,7 +32,7 @@ layers:
   - .
   - /
   - $$material:keyboard_tab$$
-  - LSHIFT
+  - {t: SHIFT, h: sticky, s: CAPS WORD}
   - {t: '$$tabler:space$$', h: Numbers}
   - {t: RETURN, h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
