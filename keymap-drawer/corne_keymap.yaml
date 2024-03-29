@@ -32,11 +32,11 @@ layers:
   - .
   - /
   - {t: '$$material:keyboard_tab$$', h: alt switch}
-  - switch
+  - LSHIFT
   - {t: '$$tabler:space$$', h: Numbers}
-  - Navigation
-  - {t: '$$material:backspace$$', h: Symbols}
-  - win switch
+  - {t: RETURN, h: Navigation}
+  - Symbols
+  - switch
   Symbols:
   - '['
   - ']'
@@ -78,8 +78,8 @@ layers:
   - $$material:right_click$$
   - $$click-middle$$
   - $$material:left_click$$
-  - '&msc MOVE_Y(15)'
-  - '&msc MOVE_Y(-15)'
+  - $$material:backspace$$
+  - $$material:backspace$$
   - $$material:left_click$$
   - '&alt_left'
   - '&alt_down'
@@ -146,7 +146,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - function
-  - ''
+  - switch
   - ''
   function:
   - F7
@@ -217,11 +217,11 @@ layers:
   - '&ctrl_3'
   - '-'
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - CTRL
-  - GUI
-  - ''
+  - {t: GUI, type: held}
+  - {type: held}
   alt switch:
   - '&lock_win'
   - ''
@@ -295,7 +295,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - {type: held}
+  - ''
   BETTER_NAV:
   - $$material:right_click$$
   - $$click-middle$$

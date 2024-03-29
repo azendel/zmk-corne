@@ -38,6 +38,9 @@ ZMK_BEHAVIOR(ctrl_alt_right, macro,
 )
 
 
+ZMK_BEHAVIOR(ctrl_bspc, macro,
+    bindings =<&macro_press  &kp CL>,  <&macro_tap &kp BSPC>,<&macro_release &kp CL> ;
+)
 
 
 ZMK_BEHAVIOR(chinese, macro,
