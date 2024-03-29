@@ -32,9 +32,9 @@ layers:
   - .
   - /
   - {t: '$$material:keyboard_tab$$', h: alt switch}
-  - {t: ESC, h: switch}
+  - switch
   - {t: '$$tabler:space$$', h: Numbers}
-  - {t: '$$material:keyboard_return$$', h: Navigation}
+  - Navigation
   - {t: '$$material:backspace$$', h: Symbols}
   - win switch
   Symbols:
@@ -364,20 +364,14 @@ combos:
   k: TMUX NEW SESSION
   l: [Colemak]
   draw_separate: true
+- p: [2, 3]
+  k: RETURN
+  l: [Colemak]
+- p: [1, 2]
+  k: ESC
+  l: [Colemak]
 - p: [33, 32]
   k: $$material:keyboard_tab$$
   l: [Colemak]
   a: bottom
   o: 0.3
-- p: [3, 2]
-  k: $$material:left_click$$
-  l: [Colemak]
-- p: [1, 0]
-  k: $$material:right_click$$
-  l: [Colemak]
-  a: top
-  o: -0.7
-  d: false
-- p: [2, 1]
-  k: $$scroll$$
-  l: [Colemak]
