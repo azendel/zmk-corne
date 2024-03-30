@@ -150,38 +150,6 @@
 
 
 </svg>
-<svg id="tabler:clipboard">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clipboard" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" />
-  <rect x="9" y="3" rx="2" />
-</svg>
-
-
-
-</svg>
-<svg id="tabler:copy">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copy" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <rect x="8" y="8" rx="2" />
-  <path d="M16 8v-2a2 2 0 0 0 -2 -2h-8a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h2" />
-</svg>
-
-
-
-</svg>
-<svg id="tabler:cut">
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cut" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <circle cx="7" cy="17" r="3" />
-  <circle cx="17" cy="17" r="3" />
-  <line x1="9.15" y1="14.85" x2="18" y2="4" />
-  <line x1="6" y1="4" x2="14.85" y2="14.85" />
-</svg>
-
-
-
-</svg>
 <svg id="tabler:player-track-next-filled">
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-track-next-filled" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -607,7 +575,6 @@ path.combo {
 </g>
 <g transform="translate(168, 205)" class="key keypos-30">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<use href="#material:keyboard_tab" xlink:href="#material:keyboard_tab" x="-7" y="-7" height="14" width="14.0" class="key tap glyph material:keyboard_tab"/>
 </g>
 <g transform="translate(230, 213) rotate(15.0)" class="key keypos-31">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -634,38 +601,32 @@ path.combo {
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="40" y="135" width="32" height="32" class="combo"/>
-<use href="#tabler:cut" xlink:href="#tabler:cut" x="49" y="144" height="14" width="14.0" class="combo tap glyph tabler:cut"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="96" y="128" width="32" height="32" class="combo"/>
-<use href="#tabler:copy" xlink:href="#tabler:copy" x="105" y="136" height="14" width="14.0" class="combo tap glyph tabler:copy"/>
-</g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="152" y="128" width="32" height="32" class="combo"/>
-<use href="#tabler:clipboard" xlink:href="#tabler:clipboard" x="161" y="136" height="14" width="14.0" class="combo tap glyph tabler:clipboard"/>
-</g>
-<g class="combo combopos-3">
 <rect rx="6" ry="6" x="656" y="29" width="32" height="32" class="combo"/>
 <use href="#tabler:camera" xlink:href="#tabler:camera" x="665" y="38" height="14" width="14.0" class="combo tap glyph tabler:camera"/>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="600" y="16" width="32" height="32" class="combo"/>
 <text x="616" y="32" class="combo tap">switch</text>
 <text x="616" y="46" class="combo hold">sticky</text>
 </g>
-<g class="combo combopos-5">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="96" y="16" width="32" height="32" class="combo"/>
 <text x="112" y="32" class="combo tap">ESC</text>
 </g>
-<g class="combo combopos-6">
+<g class="combo combopos-3">
+<path d="M112,193 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-22" class="combo"/>
+<path d="M112,193 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-29" class="combo"/>
+<rect rx="6" ry="6" x="96" y="177" width="32" height="32" class="combo"/>
+<use href="#material:keyboard_tab" xlink:href="#material:keyboard_tab" x="105" y="186" height="14" width="14.0" class="combo tap glyph material:keyboard_tab"/>
+</g>
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="600" y="128" width="32" height="32" class="combo"/>
 <text x="616" y="144" class="combo tap">
 <tspan x="616" dy="-0.6em">alt</tspan><tspan x="616" dy="1.2em">switch</tspan>
 </text>
 <text x="616" y="158" class="combo hold">sticky</text>
 </g>
-<g class="combo combopos-7">
+<g class="combo combopos-5">
 <path d="M364,285 h63 a6.0,6.0 0 0 0 6.0,-6.0 v-26" class="combo"/>
 <path d="M364,285 h-63 a6.0,6.0 0 0 1 -6.0,-6.0 v-26" class="combo"/>
 <rect rx="6" ry="6" x="348" y="269" width="32" height="32" class="combo"/>

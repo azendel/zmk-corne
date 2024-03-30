@@ -26,13 +26,13 @@
 ***********************/
 
 // CUT - Ctrl + X, active on base layer
-ZMK_COMBO(cut, &kp LC(X), LB3 LB4, COL)
+//rZMK_COMBO(cut, &kp LC(X), LB3 LB4, COL)
 
 // COPY - Ctrl + C, active on base layer
-ZMK_COMBO(copy, &kp LC(C), LB2 LB3, COL)
+// rZMK_COMBO(copy, &kp LC(C), LB2 LB3, COL)
 
 // PASTE - Ctrl + V, active on all layers
-ZMK_COMBO(paste, &kp LC(V), LB1 LB2, COL)
+// rZMK_COMBO(paste, &kp LC(V), LB1 LB2, COL)
 
 // PRINT SCREEN - PrintScreen, active on base layer
 ZMK_COMBO(printscreen, &kp PRINTSCREEN, RT3 RT4, COL)
@@ -50,6 +50,8 @@ ZMK_COMBO(tmux_session, &TMUX_SESSION, LM2 LM3 LM4, COL, HR_TIMEOUT)
 ZMK_COMBO(lay_switch,   &sl SWITCH,       RT3 RT2,     COL, COMBO_TERM_FAST)
 
 ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,   COL  , COMBO_TERM_FAST)
+
+ZMK_COMBO(tab,   &kp TAB,       LB3 LB2,   COL  , COMBO_TERM_FAST)
 
 // ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     COL, COMBO_TERM_FAST)
 ZMK_COMBO(alt_lay_switch,   &sl ALT_SWITCH,       RB3 RB2,     COL, COMBO_TERM_FAST)
