@@ -10,7 +10,7 @@ layers:
   - L
   - U
   - Y
-  - ;
+  - ''''
   - A
   - {t: R, h: ALT}
   - {t: S, h: CTRL}
@@ -28,19 +28,19 @@ layers:
   - V
   - K
   - H
-  - ','
-  - .
+  - {t: ',', s: ;}
+  - {t: ., s: ':'}
   - /
   - ''
   - {t: SHIFT, h: sticky, s: CAPS WORD}
-  - {t: '$$tabler:space$$', h: Numbers}
-  - {t: RETURN, h: Navigation}
+  - {t: RETURN, h: Numbers}
+  - {t: '$$tabler:space$$', h: Navigation}
   - {t: '$$material:backspace$$', h: Symbols}
   - ''
   Symbols:
   - '['
   - ']'
-  - ':'
+  - ''
   - '|'
   - ''
   - '~'
@@ -51,8 +51,8 @@ layers:
   - '{'
   - '{'
   - _
-  - ''''
   - '='
+  - ''
   - '`'
   - $
   - '%'
@@ -60,7 +60,7 @@ layers:
   - )
   - <
   - '>'
-  - '?'
+  - ''
   - '"'
   - \
   - ''
@@ -366,8 +366,3 @@ combos:
 - p: [28, 27]
   k: {t: alt switch, h: sticky}
   l: [Colemak]
-- p: [33, 32]
-  k: $$material:keyboard_tab$$
-  l: [Colemak]
-  a: bottom
-  o: 0.3

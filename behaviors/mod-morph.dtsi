@@ -12,6 +12,21 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
     mods = <(MOD_LSFT)>;
 )
 
+// reuse basic mod-morph scheme
+#define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
+    ZMK_BEHAVIOR(NAME, mod_morph, \
+        mods = <(MOD_L ## MOD|MOD_R ## MOD)>; \
+        bindings = <BINDING1>, <BINDING2>; \
+    )
+
+// tap: comma | shift + tap: semicolon | ctrl + shift + tap: <
+//SIMPLE_MORPH(comma_morph, SFT, &kp COMMA, &comma_inner_morph)
+//SIMPLE_MORPH(comma_inner_morph, CTL, &kp SEMICOLON, &kp LESS_THAN)
+
+// tap: dot | shift + tap: colon | ctrl + shift + tap: >
+//SIMPLE_MORPH(dot_morph, SFT, &kp DOT, &dot_inner_morph)
+//SIMPLE_MORPH(dot_inner_morph, CTL, &kp COLON, &kp GREATER_THAN)
+
 
 
 
