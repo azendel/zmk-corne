@@ -28,8 +28,8 @@ layers:
   - V
   - K
   - H
-  - {t: ',', s: ;}
-  - {t: ., s: ':'}
+  - ','
+  - .
   - /
   - ''
   - {t: SHIFT, h: sticky, s: CAPS WORD}
@@ -40,7 +40,7 @@ layers:
   Symbols:
   - '['
   - ']'
-  - ''
+  - ':'
   - '|'
   - ''
   - '~'
@@ -51,8 +51,8 @@ layers:
   - '{'
   - '{'
   - _
+  - ;
   - '='
-  - ''
   - '`'
   - $
   - '%'
@@ -366,3 +366,8 @@ combos:
 - p: [28, 27]
   k: {t: alt switch, h: sticky}
   l: [Colemak]
+- p: [33, 32]
+  k: $$material:keyboard_tab$$
+  l: [Colemak]
+  a: bottom
+  o: 0.3

@@ -5,6 +5,10 @@
 #include "../layouts/col_main.dtsi"
 
 
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+};
 
 
 ZMK_BEHAVIOR(smart_shft, mod_morph,
