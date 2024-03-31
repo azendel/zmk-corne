@@ -594,8 +594,7 @@ path.combo {
 </g>
 <g transform="translate(498, 213) rotate(-15.0)" class="key keypos-34">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<use href="#material:backspace" xlink:href="#material:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph material:backspace"/>
-<text x="0" y="23" class="key hold"><tspan style="font-size: 86%">Symbols</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 86%">Symbols</tspan></text>
 </g>
 <g transform="translate(560, 205)" class="key keypos-35">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -651,10 +650,11 @@ path.combo {
 </g>
 <g transform="translate(196, 35)" class="key keypos-3">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
-<text x="0" y="0" class="key tap">|</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 60%">&amp;ctrl_bspc</tspan></text>
 </g>
 <g transform="translate(252, 42)" class="key keypos-4">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
+<use href="#material:backspace" xlink:href="#material:backspace" x="-7" y="-7" height="14" width="14.0" class="key tap glyph material:backspace"/>
 </g>
 <g transform="translate(476, 42)" class="key keypos-5">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
@@ -726,6 +726,7 @@ path.combo {
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>
+<text x="0" y="0" class="key tap">|</text>
 </g>
 <g transform="translate(196, 147)" class="key keypos-23">
 <rect rx="6" ry="6" x="-25" y="-25" width="50" height="50" class="key"/>

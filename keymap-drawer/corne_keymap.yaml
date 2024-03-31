@@ -35,14 +35,14 @@ layers:
   - {t: SHIFT, h: sticky, s: CAPS WORD}
   - {t: RETURN, h: Numbers}
   - {t: '$$tabler:space$$', h: Navigation}
-  - {t: '$$material:backspace$$', h: Symbols}
+  - Symbols
   - ''
   Symbols:
   - '['
   - ']'
   - ':'
-  - '|'
-  - ''
+  - '&ctrl_bspc'
+  - $$material:backspace$$
   - '~'
   - '&'
   - '*'
@@ -60,7 +60,7 @@ layers:
   - )
   - <
   - '>'
-  - ''
+  - '|'
   - '"'
   - \
   - ''
