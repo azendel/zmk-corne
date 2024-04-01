@@ -47,7 +47,7 @@
             bindings = <
 &kp TAB     &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  XXX
 &kp BSPC    &kp A  &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O  &kp SEMI 
-&smart_shft &kp Z  &kp X       &kp C       &kp D        &kp V          &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &smart_shft
+&smart_shft &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX     &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &smart_shft
                                   XXX XXX  &kp ESC &lt NUM SPACE  XXX           &mo FUNC &lt NAV RETURN   &mo SYM    XXX  XXX
             >;
         };
@@ -63,7 +63,7 @@ XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE        XXX          &k
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     &kp LBRC   &kp  LBRC  &kp UNDER     &kp SEMI     &kp EQUAL              &kp GRAVE    &kp DLLR      &kp  PRCNT     &kp CARET         &kp RPAR XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH            XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
+XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH  XXX XXX XXX XXX           XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                                                                 &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
             >;
