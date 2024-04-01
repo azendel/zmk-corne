@@ -56,7 +56,7 @@ XXX         &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX  
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE        XXX          &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     &kp LBRC   &kp  LBRC  &kp UNDER     &kp SEMI     &kp EQUAL              &kp GRAVE    &kp DLLR      &kp  PRCNT     &kp CARET         &kp RPAR XXX
+XXX     &kp LBRC   &kp  LBRC  &kp UNDER    &kp EQUAL XXX             &kp GRAVE    &kp DLLR      &kp  PRCNT     &kp CARET         &kp RPAR XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH  XXX XXX XXX XXX           XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
