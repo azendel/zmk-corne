@@ -142,8 +142,10 @@ XXX     XXX        &gui_1      &gui_2      &gui_3     XXX   XXX XXX XXX XXX     
 XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
             >;
         };
-        better_nav_layer {
-            bindings = <
+    };
+};
+
+ZMK_LAYER(Better_nav,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX    &mkp_rg     &mkp_md      &mkp_lf    &fmsc_up     &fmsc_dn       &mkp_lf      &fmsc_lf            &cl_mkp_lf   &al_mkp_lf           &fmsc_rg     XXX
 // ├───────────┼───────────┼───────────┼────────────┼───────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -152,7 +154,4 @@ XXX    &fmmv_lf     &fmmv_dn       &fmmv_up     &fmmv_rg   XXX             XXX  
 XXX     XXX          XXX           XXX         XXX         XXX  XXX XXX XXX XXX                   XXX          &win_LEFT    &win_DOWN      &win_UP     &win_RIGHT XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             XXX            XXX         XXX             XXX         XXX           XXX    XXX  XXX
-            >;
-        };
-    };
-};
+)
