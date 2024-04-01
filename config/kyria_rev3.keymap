@@ -34,25 +34,14 @@
 };
  */
 
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-
-        default_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // | ESC   | Q | W | E   | R    | T        |                                           |  Y   |  U    |  I    |  O   |   P   | ESC  |
-            // | TAB   | A | S | D   | F    | G        |                                           |  H   |  J    |  K    |  L   |   ;   | SHFT |
-            // | SHIFT | Z | X | C   | V    | B        | ---      | ---       |==| ---      |          |  N   |  M    |  ,    |  .   |   /   | CTRL |
-            //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LCTRL/DEL |==| LSHFT/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
-            bindings = <
+ZMK_LAYER(colemak,
 &smart_shft &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI   &smart_shft
 &ctrl_bspc    &kp A  &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O  &kp SQT 
 XXX         &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX     &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  XXX
                                   XXX XXX  &kp TAB  &kp ESC &lt NUM SPACE             &lt NAV RETURN   &mo SYM  &mo FUNC   XXX  XXX
-            >;
-        };
-        symbol_layer {
-            bindings = <
+)
+
+ZMK_LAYER(symbol_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE        XXX          &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -61,10 +50,9 @@ XXX     &kp LBRC   &kp  LBRC  &kp UNDER    &kp EQUAL XXX             &kp GRAVE  
 XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH  XXX XXX XXX XXX           XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                           XXX     XXX     XXX     XXX     XXX              XXX     XXX     XXX     XXX     XXX    
-            >;
-        };
-        nav_layer {
-            bindings = <
+)
+
+ZMK_LAYER(nav_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX      &mkp_rg     &mkp_md      &mkp_lf      &msc_up     &msc_dn       &mkp_lf       &alt_left    &alt_down     &alt_up      &alt_right XXX
 // ├───────────┼───────────┼───────────┼────────────┼───────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -73,10 +61,9 @@ XXX      &mkp_rg     &mkp_md      &mkp_lf      &msc_up     &msc_dn       &mkp_lf
 XXX &ctrl_alt_left &ctrl_alt_down &ctrl_alt_up &ctrl_alt_right &kp PG_DN XXX XXX XXX XXX           &kp END       &ctrl_left   &ctrl_down    &ctrl_up     &ctrl_right XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                XXX XXX     XXX    &kp SL     &mo BETTER_NAV           XXX          XXX       XXX XXX XXX 
-            >;
-        };
-        number_layer {
-            bindings = <
+)
+
+ZMK_LAYER(number_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX     XXX         &chinese   &kp CAPSLOCK  &ctrl_bspc   &kp BSPC      &kp DEL      &kp N7        &kp N8        &kp N9       &kp PLUS XXX 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -85,11 +72,9 @@ XXX     &kp GL      &kp AL      &kp CL      &kp SL       XXX            &kp DOT 
 XXX XXX          XXX         XXX         &kp K_CONTEXT_MENU XXX XXX XXX XXX                        XXX               &kp INS    &kp N1        &kp N2        &kp N3       &kp MINUS XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
     XXX           XXX        XXX          XXX         XXX             &mo FUNC        XXX        XXX              XXX           XXX 
+)
                     
-            >;
-        };
-        func_layer {
-            bindings = <
+ZMK_LAYER(func_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX      &kp F7      &kp F8      &kp F9      &kp F10       &kp F13        &kp C_PP    &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP &kp C_NEXT     XXX 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -98,11 +83,9 @@ XXX      &kp F4      &kp F5      &kp F6      &kp F11       &kp F14        XXX   
 XXX      &kp F1     &kp F2       &kp F3     &kp F12        &kp F15  XXX XXX XXX XXX                 &out OUT_TOG &bt BT_PRV   &ext_power EP_ON  &ext_power EP_TOG &bt BT_NXT  XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                              XXX         &kp GL        XXX             ___     &bt BT_CLR ___ XXX XXX 
-                    
-            >;
-        };
-        switch_layer {
-            bindings = <
+)       
+
+ZMK_LAYER(switch_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX      &lock       &gui_7      &gui_8      &gui_9        XXX            &kp INS     &ctrl_7      &ctrl_8       &ctrl_9       &kp PLUS XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -111,10 +94,9 @@ XXX     XXX         &gui_4      &gui_5      &gui_6      &kp SL           &kp DOT
 XXX     XXX        &gui_1      &gui_2      &gui_3     XXX  XXX XXX XXX XXX                        &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
-            >;
-        };
-        alt_switch_layer {
-            bindings = <
+)
+
+ZMK_LAYER(alt_switch_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX &lock_win    &clsl_7      &clsl_8      &clsl_9        XXX                 XXX         &alt_7        &alt_8      &alt_9        XXX XXX           
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -123,15 +105,9 @@ XXX     XXX         &clsl_4      &clsl_5      &clsl_6      &clsl_0              
 XXX     XXX        &clsl_1      &clsl_2      &clsl_3     XXX     XXX XXX XXX XXX   XXX        &alt_1      &alt_2      &alt_3     XXX         XXX     
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
-            >;
-        };
-        book_switch_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |         |         | BT_CLR  | BTSEL0  | BTSEL1  | BTSEL2 |                                         | C_BRI_INC | C_VOL_UP | C_MUTE | C_VOL_DN |      |      |
-            // |         |         |         | BTSEL3  | BTSEL4  |        |                                         | C_BRI_DEC | C_PREV   | C_PP   | C_NEXT   |      |      |
-            // | RGB_EFF | RGB_EFR | RGB_BRI | RGB_TOG | RGB_BRD |        |      |      |      |      |      |      |           |          |        |          |      |      |
-            //                     |         |         |         |        |      |      |      |      |      |      |           |          |
-            bindings = <
+)
+
+ZMK_LAYER(book_switch_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX      &lock       &gui_7      &gui_8      &gui_9        XXX            &kp INS     &ctrl_7      &ctrl_8       &ctrl_9       &kp PLUS XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
@@ -140,10 +116,7 @@ XXX     XXX         &gui_4      &gui_5      &gui_6      &kp SL           &kp DOT
 XXX     XXX        &gui_1      &gui_2      &gui_3     XXX   XXX XXX XXX XXX                       &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
-            >;
-        };
-    };
-};
+)
 
 ZMK_LAYER(Better_nav,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
@@ -155,3 +128,5 @@ XXX     XXX          XXX           XXX         XXX         XXX  XXX XXX XXX XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             XXX            XXX         XXX             XXX         XXX           XXX    XXX  XXX
 )
+
+
