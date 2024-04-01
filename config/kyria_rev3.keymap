@@ -60,7 +60,7 @@ XXX     &kp LBRC   &kp  LBRC  &kp UNDER     &kp SEMI     &kp EQUAL              
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH  XXX XXX XXX XXX           XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-                                                                &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
+                          XXX     XXX     XXX     XXX     XXX              XXX     XXX     XXX     XXX     XXX    
             >;
         };
         nav_layer {
@@ -72,7 +72,7 @@ XXX      &mkp_rg     &mkp_md      &mkp_lf      &msc_up     &msc_dn       &mkp_lf
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX &ctrl_alt_left &ctrl_alt_down &ctrl_alt_up &ctrl_alt_right &kp PG_DN XXX XXX XXX XXX           &kp END       &ctrl_left   &ctrl_down    &ctrl_up     &ctrl_right XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-               XXX XXX         &kp SL     &mo BETTER_NAV  XXX        &kp TAB          ___           ___ XXX XXX 
+               XXX XXX     XXX    &kp SL     &mo BETTER_NAV           XXX          XXX       XXX XXX XXX 
             >;
         };
         number_layer {
@@ -84,7 +84,7 @@ XXX     &kp GL      &kp AL      &kp CL      &kp SL       XXX            &kp DOT 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX XXX          XXX         XXX         &kp K_CONTEXT_MENU XXX XXX XXX XXX                        XXX               &kp INS    &kp N1        &kp N2        &kp N3       &kp MINUS XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-    XXX XXX                          ___         ___          ___            &mo FUNC        &mo SWITCH        XXX XXX XXX 
+    XXX           XXX        XXX          XXX         XXX             XXX         XXX        XXX              XXX           XXX 
                     
             >;
         };

@@ -13,7 +13,7 @@ layers:
   - Y
   - ''''
   - {t: SHIFT, h: sticky, s: CAPS WORD}
-  - $$material:backspace$$
+  - '&ctrl_bspc'
   - A
   - {t: R, h: ALT}
   - {t: S, h: CTRL}
@@ -43,12 +43,12 @@ layers:
   - ''
   - ''
   - ''
+  - $$material:keyboard_tab$$
   - ESC
   - {t: '$$tabler:space$$', h: Numbers}
-  - $$material:keyboard_tab$$
-  - function
   - {t: RETURN, h: Navigation}
   - Symbols
+  - function
   - ''
   - ''
   Symbols:
@@ -92,16 +92,16 @@ layers:
   - '#'
   - '-'
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   Navigation:
   - ''
   - $$material:right_click$$
@@ -115,7 +115,7 @@ layers:
   - '&alt_up'
   - '&alt_right'
   - ''
-  - ''
+  - $$material:backspace$$
   - $$cursor-left$$
   - $$cursor-down$$
   - $$cursor-up$$
@@ -148,9 +148,9 @@ layers:
   - ''
   - SHIFT
   - BETTER_NAV
-  - $$material:keyboard_tab$$
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - ''
   - ''
   Numbers:
@@ -196,11 +196,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - function
-  - switch
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -248,11 +248,11 @@ layers:
   - ''
   - ''
   - ''
-  - {t: GUI, type: held}
+  - GUI
   - ''
-  - {type: held}
-  - $$bt-clear$$
   - {t: ▽, type: trans}
+  - $$bt-clear$$
+  - {type: held}
   - ''
   - ''
   switch:
@@ -299,10 +299,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - CTRL
-  - {t: GUI, type: held}
+  - GUI
   - ''
   - ''
   - ''
@@ -454,8 +454,8 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
   - {type: held}
+  - ''
   - ''
   - ''
   - ''
