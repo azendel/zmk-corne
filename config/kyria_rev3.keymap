@@ -45,10 +45,10 @@
             // | SHIFT | Z | X | C   | V    | B        | ---      | ---       |==| ---      |          |  N   |  M    |  ,    |  .   |   /   | CTRL |
             //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LCTRL/DEL |==| LSHFT/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
             bindings = <
-&kp TAB     &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  XXX
+&smart_shft &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  &smart_shft
 &kp BSPC    &kp A  &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O  &kp SEMI 
-&smart_shft &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX     &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &smart_shft
-                                  XXX XXX  &kp ESC &lt NUM SPACE  XXX           &mo FUNC &lt NAV RETURN   &mo SYM    XXX  XXX
+XXX         &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX     &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  XXX
+                                  XXX XXX  &kp ESC &lt NUM SPACE  &kp TAB           &mo FUNC &lt NAV RETURN   &mo SYM    XXX  XXX
             >;
         };
         symbol_layer {
