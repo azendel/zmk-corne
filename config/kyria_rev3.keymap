@@ -170,13 +170,13 @@ XXX XXX                             ___         ___          ___            &kp 
             //                     |         |         |         |        |      |      |      |      |      |      |           |          |
             bindings = <
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-XXX      &lock       &gui_7      &gui_8      &gui_9        XXX            &kp INS     &ctrl_7      &ctrl_8       &ctrl_9       &kp PLUS XXX
+XXX    &mkp_rg     &mkp_md      &mkp_lf    &fmsc_up     &fmsc_dn       &mkp_lf      &fmsc_lf            &cl_mkp_lf   &al_mkp_lf           &fmsc_rg     XXX
+// ├───────────┼───────────┼───────────┼────────────┼───────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
+XXX    &fmmv_lf     &fmmv_dn       &fmmv_up     &fmmv_rg   XXX             XXX      &shift_win_LEFT    &shift_win_DOWN      &shift_win_UP     &shift_win_RIGHT XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     XXX         &gui_4      &gui_5      &gui_6      &kp SL           &kp DOT     &ctrl_4       &ctrl_5         &ctrl_6        &ctrl_0 XXX
-// ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     XXX        &gui_1      &gui_2      &gui_3     XXX               &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
+XXX     XXX          XXX           XXX         XXX         XXX          XXX          &win_LEFT    &win_DOWN      &win_UP     &win_RIGHT XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
+XXX XXX                             XXX            XXX         XXX             XXX         XXX           XXX
             >;
         };
     };
