@@ -33,12 +33,10 @@
             // | SHIFT | Z | X | C   | V    | B        | ---      | ---       |==| ---      |          |  N   |  M    |  ,    |  .   |   /   | CTRL |
             //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LCTRL/DEL |==| LSHFT/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
             bindings = <
-            &kp TAB   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI  &kp XXX
-            &kp TAB   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI  &kp XXX
-            &kp TAB   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI  &kp XXX
-//            &kp BSPC  &kp A &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O     &kp  SQT
-//            &smart_shft &kp Z       &kp X       &kp C       &kp D        &kp V          &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &smart_shft 
-                                  &none  &none  &mt LALT ESC &mt LSHFT RET &mt LCTRL DEL          &lt FUN BSPC &lt SYM SPACE   &mt RALT TAB    &lt MED K_APP     &none
+            &kp ESC   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  &kp ESC
+            &kp TAB   &kp A &kp S &kp D     &kp F   &kp G                                                       &kp H       &kp J       &kp K     &kp L   &kp SEMI &kp RSHFT
+            &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B       &none       &none           &none   &none     &kp N       &kp M       &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+                                  &none  &kp LGUI &mt LALT ESC &mt LSHFT RET &mt LCTRL DEL          &lt FUN BSPC &lt SYM SPACE   &mt RALT TAB    &lt MED K_APP     &none
             >;
         };
         symbol_layer {
@@ -48,15 +46,10 @@
             // |  ^    |   "  |  }   |  ]   |   )  |   >  |  `   |      |      ==     |      |      |  *   |  1   |  2   |  3   |  /   |  \   |
             //                       |      |      |      |      |      |      ==     |      |      |      |      |      |
             bindings = <
-// ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-&kp XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE        XXX          &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS &kp XXX
-// ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
- &kp XXX    &kp LBRC   &kp  LBRC  &kp UNDER     &kp SEMI     &kp EQUAL              &kp GRAVE    &kp DLLR      &kp  PRCNT     &kp CARET         &kp RPAR &kp XXX
-// ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-&kp XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH            XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS &kp XXX
-// ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-                            &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
-//                         ╰───────────┴────────────┴────────────╯ ╰───────────┴─────────────┴─────────────╯
+            &kp TILDE   &kp EXCL    &kp AT      &kp HASH    &kp DOLLAR  &kp PERCENT                                         &kp PLUS    &kp N7   &kp N8 &kp N9 &kp MINUS  &kp UNDER
+            &kp AMPS     &kp SQT     &kp LBRC    &kp LBKT    &kp LPAR    &kp LT                                             &kp EQUAL   &kp N4   &kp N5 &kp N6 &kp N0     &kp PIPE
+            &kp CARET   &kp DQT     &kp RBRC    &kp RBKT    &kp RPAR    &kp GT    &kp GRAVE &trans          &trans &trans   &kp STAR    &kp N1   &kp N2 &kp N3 &kp FSLH   &kp BSLH
+                                                                &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
             >;
         };
         function_layer {
