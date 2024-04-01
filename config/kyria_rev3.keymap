@@ -75,7 +75,7 @@ XXX      &mkp_rg     &mkp_md      &mkp_lf      &msc_up     &msc_dn       &mkp_lf
 // ├───────────┼───────────┼───────────┼────────────┼───────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX    &mmv_lf     &mmv_dn       &mmv_up     &mmv_rg   &kp PG_UP       &kp HOME      &kp LEFT        &kp DOWN      &kp UP     &kp RIGHT  XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX &ctrl_alt_left &ctrl_alt_down &ctrl_alt_up &ctrl_alt_right &kp PG_DN &kp END       &ctrl_left   &ctrl_down    &ctrl_up     &ctrl_right XXX
+XXX &ctrl_alt_left &ctrl_alt_down &ctrl_alt_up &ctrl_alt_right &kp PG_DN XXX XXX XXX XXX           &kp END       &ctrl_left   &ctrl_down    &ctrl_up     &ctrl_right XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                XXX XXX              XXX       &kp SL     &mo BETTER_NAV     &kp TAB          ___           ___ XXX XXX 
             >;
@@ -87,7 +87,7 @@ XXX     XXX         &chinese   &kp CAPSLOCK  &ctrl_bspc   &kp BSPC      &kp DEL 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     &kp GL      &kp AL      &kp CL      &kp SL       XXX            &kp DOT     &kp N4        &kp N5        &kp N6       &kp N0 XXX 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX XXX          XXX         XXX         &kp K_CONTEXT_MENU              XXX               &kp INS    &kp N1        &kp N2        &kp N3       &kp MINUS XXX 
+XXX XXX          XXX         XXX         &kp K_CONTEXT_MENU XXX XXX XXX XXX                        XXX               &kp INS    &kp N1        &kp N2        &kp N3       &kp MINUS XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
     XXX XXX                          ___         ___          ___            &mo FUNC        &mo SWITCH        XXX XXX XXX 
                     
@@ -105,7 +105,7 @@ XXX      &kp F7      &kp F8      &kp F9      &kp F10       &kp F13        &kp C_
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX      &kp F4      &kp F5      &kp F6      &kp F11       &kp F14        XXX         &kp SL        &kp CL        &kp AL       &kp GL XXX 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX      &kp F1     &kp F2       &kp F3     &kp F12        &kp F15        &out OUT_TOG &bt BT_PRV   &ext_power EP_ON  &ext_power EP_TOG &bt BT_NXT  XXX 
+XXX      &kp F1     &kp F2       &kp F3     &kp F12        &kp F15  XXX XXX XXX XXX                 &out OUT_TOG &bt BT_PRV   &ext_power EP_ON  &ext_power EP_TOG &bt BT_NXT  XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                              XXX         &kp GL        XXX             ___     &bt BT_CLR ___ XXX XXX 
                     
@@ -123,7 +123,7 @@ XXX      &lock       &gui_7      &gui_8      &gui_9        XXX            &kp IN
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     XXX         &gui_4      &gui_5      &gui_6      &kp SL           &kp DOT     &ctrl_4       &ctrl_5         &ctrl_6        &ctrl_0 XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     XXX        &gui_1      &gui_2      &gui_3     XXX               &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
+XXX     XXX        &gui_1      &gui_2      &gui_3     XXX  XXX XXX XXX XXX                        &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
             >;
@@ -140,7 +140,7 @@ XXX      &lock       &gui_7      &gui_8      &gui_9        XXX            &kp IN
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     XXX         &gui_4      &gui_5      &gui_6      &kp SL           &kp DOT     &ctrl_4       &ctrl_5         &ctrl_6        &ctrl_0 XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     XXX        &gui_1      &gui_2      &gui_3     XXX               &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
+XXX     XXX        &gui_1      &gui_2      &gui_3     XXX  XXX XXX XXX XXX                        &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
             >;
@@ -157,7 +157,7 @@ XXX      &lock       &gui_7      &gui_8      &gui_9        XXX            &kp IN
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     XXX         &gui_4      &gui_5      &gui_6      &kp SL           &kp DOT     &ctrl_4       &ctrl_5         &ctrl_6        &ctrl_0 XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     XXX        &gui_1      &gui_2      &gui_3     XXX               &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
+XXX     XXX        &gui_1      &gui_2      &gui_3     XXX   XXX XXX XXX XXX                       &kp DEL     &ctrl_1       &ctrl_2      &ctrl_3       &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             ___         ___          ___            &kp CL         &kp GL       XXX XXX XXX
             >;
@@ -174,7 +174,7 @@ XXX    &mkp_rg     &mkp_md      &mkp_lf    &fmsc_up     &fmsc_dn       &mkp_lf  
 // ├───────────┼───────────┼───────────┼────────────┼───────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX    &fmmv_lf     &fmmv_dn       &fmmv_up     &fmmv_rg   XXX             XXX      &shift_win_LEFT    &shift_win_DOWN      &shift_win_UP     &shift_win_RIGHT XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     XXX          XXX           XXX         XXX         XXX          XXX          &win_LEFT    &win_DOWN      &win_UP     &win_RIGHT XXX
+XXX     XXX          XXX           XXX         XXX         XXX  XXX XXX XXX XXX                   XXX          &win_LEFT    &win_DOWN      &win_UP     &win_RIGHT XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             XXX            XXX         XXX             XXX         XXX           XXX
             >;
