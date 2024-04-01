@@ -1,4 +1,4 @@
-/*
+/*      
  * Copyright (c) 2023 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
@@ -45,8 +45,8 @@
             // | SHIFT | Z | X | C   | V    | B        | ---      | ---       |==| ---      |          |  N   |  M    |  ,    |  .   |   /   | CTRL |
             //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LCTRL/DEL |==| LSHFT/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
             bindings = <
-&smart_shft &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  &smart_shft
-&ctrl_bspc    &kp A  &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O  &kp SEMI 
+&smart_shft &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI   &smart_shft
+&ctrl_bspc    &kp A  &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O  &kp SQT 
 XXX         &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX     &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  XXX
                                   XXX XXX  &kp TAB  &kp ESC &lt NUM SPACE             &lt NAV RETURN   &mo SYM  &mo FUNC   XXX  XXX
             >;
@@ -84,16 +84,11 @@ XXX     &kp GL      &kp AL      &kp CL      &kp SL       XXX            &kp DOT 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX XXX          XXX         XXX         &kp K_CONTEXT_MENU XXX XXX XXX XXX                        XXX               &kp INS    &kp N1        &kp N2        &kp N3       &kp MINUS XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-    XXX           XXX        XXX          XXX         XXX             XXX         XXX        XXX              XXX           XXX 
+    XXX           XXX        XXX          XXX         XXX             &mo FUNC        XXX        XXX              XXX           XXX 
                     
             >;
         };
         func_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |         |         | BT_CLR  | BTSEL0  | BTSEL1  | BTSEL2 |                                         | C_BRI_INC | C_VOL_UP | C_MUTE | C_VOL_DN |      |      |
-            // |         |         |         | BTSEL3  | BTSEL4  |        |                                         | C_BRI_DEC | C_PREV   | C_PP   | C_NEXT   |      |      |
-            // | RGB_EFF | RGB_EFR | RGB_BRI | RGB_TOG | RGB_BRD |        |      |      |      |      |      |      |           |          |        |          |      |      |
-            //                     |         |         |         |        |      |      |      |      |      |      |           |          |
             bindings = <
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX      &kp F7      &kp F8      &kp F9      &kp F10       &kp F13        &kp C_PP    &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP &kp C_NEXT     XXX 

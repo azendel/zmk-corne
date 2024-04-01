@@ -11,7 +11,7 @@ layers:
   - L
   - U
   - Y
-  - ''''
+  - ;
   - {t: SHIFT, h: sticky, s: CAPS WORD}
   - '&ctrl_bspc'
   - A
@@ -24,7 +24,7 @@ layers:
   - {t: E, h: CTRL}
   - {t: I, h: RALT}
   - O
-  - ;
+  - ''''
   - ''
   - Z
   - X
@@ -199,7 +199,7 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
+  - function
   - ''
   - ''
   - ''
@@ -249,8 +249,8 @@ layers:
   - ''
   - ''
   - GUI
-  - ''
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - $$bt-clear$$
   - {type: held}
   - ''
