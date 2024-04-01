@@ -25,11 +25,6 @@
 #include "../behaviors/mod-morph.dtsi"
 #include "../behaviors/mouse.dtsi"
 
-#define DEF 0
-#define SYM 1
-#define FUNC 2
-#define NUM 3
-
 
 /* Uncomment this block if using RGB
 &led_strip {
@@ -53,7 +48,7 @@
 &kp TAB     &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  XXX
 &kp BSPC    &kp A  &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O  &kp SEMI 
 &smart_shft &kp Z  &kp X       &kp C       &kp D        &kp V          &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &smart_shft
-                                  XXX XXX  &kp ESC &lt NUM SPACE  XXX           &mo FUNC &kp SPACE   &mo SYM    XXX  XXX
+                                  XXX XXX  &kp ESC &lt NUM SPACE  XXX           &mo FUNC &lt NAV RETURN   &mo SYM    XXX  XXX
             >;
         };
         symbol_layer {
@@ -71,6 +66,18 @@ XXX     &kp LBRC   &kp  LBRC  &kp UNDER     &kp SEMI     &kp EQUAL              
 XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH            XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
                                                                 &trans &trans &trans &trans &trans          &trans &trans &trans &trans &trans
+            >;
+        };
+        nav_layer {
+            bindings = <
+// ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
+XXX      &mkp_rg     &mkp_md      &mkp_lf      &msc_up     &msc_dn       &mkp_lf       &alt_left    &alt_down     &alt_up      &alt_right XXX
+// ├───────────┼───────────┼───────────┼────────────┼───────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
+XXX    &mmv_lf     &mmv_dn       &mmv_up     &mmv_rg   &kp PG_UP       &kp HOME      &kp LEFT        &kp DOWN      &kp UP     &kp RIGHT  XXX
+// ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
+XXX &ctrl_alt_left &ctrl_alt_down &ctrl_alt_up &ctrl_alt_right &kp PG_DN &kp END       &ctrl_left   &ctrl_down    &ctrl_up     &ctrl_right XXX
+// ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
+               XXX XXX              XXX       &kp SL     &mo BETTER_NAV     &kp TAB          ___           ___ XXX XXX 
             >;
         };
         function_layer {
