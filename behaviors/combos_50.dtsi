@@ -1,0 +1,63 @@
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_50keys.h"
+#include "../config/constants.h"
+#include "../behaviors/macros.dtsi"
+
+#pragma once
+
+// Combos
+#undef COMBO_TERM
+#define COMBO_TERM 40  // timeout of 40ms (default is 30ms if omitted)
+#define HR_TIMEOUT 30  // timeout on homerow is better a bit shorter
+
+#define COMBO_TERM_FAST 25
+/***********************
+  ALL LAYERS
+***********************/
+
+// NOTE: Other thumb key combos are in ./combos_34.dsti and combos_36.dtsi
+
+// NOTE: Other mouse keys related combos in ./mouse.dtsi
+
+/***********************
+  BASE LAYER
+***********************/
+
+// CUT - Ctrl + X, active on base layer
+//rZMK_COMBO(cut, &kp LC(X), LB3 LB4, COL)
+
+// COPY - Ctrl + C, active on base layer
+// rZMK_COMBO(copy, &kp LC(C), LB2 LB3, COL)
+
+// PASTE - Ctrl + V, active on all layers
+// rZMK_COMBO(paste, &kp LC(V), LB1 LB2, COL)
+
+// PRINT SCREEN - PrintScreen, active on base layer
+ZMK_COMBO(printscreen, &kp PRINTSCREEN, RT3 RT4, COL)
+
+// TMUX Prefix - active on base layer
+ZMK_COMBO(tmux, &kp TMUX, LM2 LM3, COL, HR_TIMEOUT)
+
+// TMUX Command - active on base layer
+ZMK_COMBO(tmux_cmd, &TMUX_CMD, LM2 LM3 RM4, COL, HR_TIMEOUT)
+
+// TMUX New Session - active on base layer
+ZMK_COMBO(tmux_session, &TMUX_SESSION, LM2 LM3 LM4, COL, HR_TIMEOUT)
+
+// ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     COL, COMBO_TERM_FAST)
+ZMK_COMBO(lay_switch,   &sl SWITCH,       RT3 RT2,     COL, COMBO_TERM_FAST)
+
+ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,   COL  , COMBO_TERM_FAST)
+
+ZMK_COMBO(tab,   &kp TAB,       LB3 LB2,   COL  , COMBO_TERM_FAST)
+
+// ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     COL, COMBO_TERM_FAST)
+ZMK_COMBO(alt_lay_switch,   &sl ALT_SWITCH,       RB3 RB2,     COL, COMBO_TERM_FAST)
+
+// Toggle Mouse Layer - active on base and mouse layers
+// ZMKR_COMBO(toggle_mouse, &tog MOU, LT1 LT4, MOU COL)
+
+

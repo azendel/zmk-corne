@@ -2,7 +2,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/keys.h>
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_50keys.h"
 #include "../config/constants.h"
 
 // Documentation : https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation/

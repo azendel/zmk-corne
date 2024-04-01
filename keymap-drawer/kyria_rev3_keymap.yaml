@@ -1,0 +1,494 @@
+layout: {qmk_keyboard: splitkb/kyria/rev1}
+layers:
+  Colemak:
+  - {t: SHIFT, h: sticky, s: CAPS WORD}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: SHIFT, h: sticky, s: CAPS WORD}
+  - $$material:backspace$$
+  - A
+  - {t: R, h: ALT}
+  - {t: S, h: CTRL}
+  - {t: T, h: SHIFT}
+  - G
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: CTRL}
+  - {t: I, h: RALT}
+  - O
+  - ;
+  - ''
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - ''
+  - ''
+  - ''
+  - ''
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - ''
+  - ''
+  - ''
+  - ESC
+  - {t: '$$tabler:space$$', h: Numbers}
+  - $$material:keyboard_tab$$
+  - function
+  - {t: RETURN, h: Navigation}
+  - Symbols
+  - ''
+  - ''
+  Symbols:
+  - ''
+  - '['
+  - ']'
+  - ':'
+  - '|'
+  - ''
+  - '~'
+  - '&'
+  - '*'
+  - (
+  - +
+  - ''
+  - ''
+  - '{'
+  - '{'
+  - _
+  - ;
+  - '='
+  - '`'
+  - $
+  - '%'
+  - ^
+  - )
+  - ''
+  - ''
+  - <
+  - '>'
+  - ''
+  - '"'
+  - \
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '!'
+  - '@'
+  - '#'
+  - '-'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Navigation:
+  - ''
+  - $$material:right_click$$
+  - $$click-middle$$
+  - $$material:left_click$$
+  - '&msc MOVE_Y(15)'
+  - '&msc MOVE_Y(-15)'
+  - $$material:left_click$$
+  - '&alt_left'
+  - '&alt_down'
+  - '&alt_up'
+  - '&alt_right'
+  - ''
+  - ''
+  - $$cursor-left$$
+  - $$cursor-down$$
+  - $$cursor-up$$
+  - $$cursor-right$$
+  - PAGE UP
+  - HOME
+  - $$tabler:arrow-big-left$$
+  - $$tabler:arrow-big-down$$
+  - $$tabler:arrow-big-up$$
+  - $$tabler:arrow-big-right$$
+  - ''
+  - ''
+  - '&ctrl_alt_left'
+  - '&ctrl_alt_down'
+  - '&ctrl_alt_up'
+  - '&ctrl_alt_right'
+  - PAGE DOWN
+  - ''
+  - ''
+  - ''
+  - ''
+  - END
+  - '&ctrl_left'
+  - '&ctrl_down'
+  - '&ctrl_up'
+  - '&ctrl_right'
+  - ''
+  - ''
+  - ''
+  - ''
+  - SHIFT
+  - BETTER_NAV
+  - $$material:keyboard_tab$$
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  Numbers:
+  - ''
+  - ''
+  - '&chinese'
+  - CAPS LOCK
+  - '&ctrl_bspc'
+  - $$material:backspace$$
+  - $$delete$$
+  - '7'
+  - '8'
+  - '9'
+  - +
+  - ''
+  - ''
+  - GUI
+  - ALT
+  - CTRL
+  - SHIFT
+  - ''
+  - .
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - CONTEXT MENU
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - INSERT
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - function
+  - switch
+  - ''
+  - ''
+  - ''
+  function:
+  - ''
+  - F7
+  - F8
+  - F9
+  - F10
+  - F13
+  - $$play-pause$$
+  - $$tabler:player-track-prev-filled$$
+  - $$tabler:volume-2$$
+  - $$tabler:volume$$
+  - $$tabler:player-track-next-filled$$
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - F11
+  - F14
+  - ''
+  - SHIFT
+  - CTRL
+  - ALT
+  - GUI
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F12
+  - F15
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$output-toggle$$
+  - $$bt-prev$$
+  - EP ON
+  - EP TOG
+  - $$bt-next$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: GUI, type: held}
+  - ''
+  - {type: held}
+  - $$bt-clear$$
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  switch:
+  - ''
+  - '&lock'
+  - '&gui_7'
+  - '&gui_8'
+  - '&gui_9'
+  - ''
+  - INSERT
+  - '&ctrl_7'
+  - {t: '&ctrl_8', type: held}
+  - {t: '&ctrl_9', type: held}
+  - +
+  - ''
+  - ''
+  - ''
+  - '&gui_4'
+  - '&gui_5'
+  - '&gui_6'
+  - SHIFT
+  - .
+  - '&ctrl_4'
+  - '&ctrl_5'
+  - '&ctrl_6'
+  - '&ctrl_0'
+  - ''
+  - ''
+  - ''
+  - '&gui_1'
+  - '&gui_2'
+  - '&gui_3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$delete$$
+  - '&ctrl_1'
+  - '&ctrl_2'
+  - '&ctrl_3'
+  - '-'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - CTRL
+  - {t: GUI, type: held}
+  - ''
+  - ''
+  - ''
+  alt switch:
+  - ''
+  - '&lock_win'
+  - '&clsl_7'
+  - '&clsl_8'
+  - '&clsl_9'
+  - ''
+  - ''
+  - '&alt_7'
+  - '&alt_8'
+  - '&alt_9'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&clsl_4'
+  - '&clsl_5'
+  - '&clsl_6'
+  - '&clsl_0'
+  - ''
+  - '&alt_4'
+  - '&alt_5'
+  - '&alt_6'
+  - '&alt_0'
+  - ''
+  - ''
+  - ''
+  - '&clsl_1'
+  - '&clsl_2'
+  - '&clsl_3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&alt_1'
+  - {t: '&alt_2', type: held}
+  - {t: '&alt_3', type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CTRL
+  - GUI
+  - ''
+  - ''
+  - ''
+  win switch:
+  - ''
+  - '&lock'
+  - '&gui_7'
+  - '&gui_8'
+  - '&gui_9'
+  - ''
+  - INSERT
+  - '&ctrl_7'
+  - '&ctrl_8'
+  - '&ctrl_9'
+  - +
+  - ''
+  - ''
+  - ''
+  - '&gui_4'
+  - '&gui_5'
+  - '&gui_6'
+  - SHIFT
+  - .
+  - '&ctrl_4'
+  - '&ctrl_5'
+  - '&ctrl_6'
+  - '&ctrl_0'
+  - ''
+  - ''
+  - ''
+  - '&gui_1'
+  - '&gui_2'
+  - '&gui_3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$delete$$
+  - '&ctrl_1'
+  - '&ctrl_2'
+  - '&ctrl_3'
+  - '-'
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CTRL
+  - GUI
+  - ''
+  - ''
+  - ''
+  BETTER_NAV:
+  - ''
+  - $$material:right_click$$
+  - $$click-middle$$
+  - $$material:left_click$$
+  - '&msc MOVE_Y(30)'
+  - '&msc MOVE_Y(-30)'
+  - $$material:left_click$$
+  - '&msc MOVE_X(-30)'
+  - '&cl_mkp_lf'
+  - '&al_mkp_lf'
+  - '&msc MOVE_X(30)'
+  - ''
+  - ''
+  - '&mmv MOVE_X(-3200)'
+  - '&mmv MOVE_Y(3200)'
+  - '&mmv MOVE_Y(-3200)'
+  - '&mmv MOVE_X(3200)'
+  - ''
+  - ''
+  - '&shift_win_LEFT'
+  - '&shift_win_DOWN'
+  - '&shift_win_UP'
+  - '&shift_win_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&win_LEFT'
+  - '&win_DOWN'
+  - '&win_UP'
+  - '&win_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+combos:
+- p: [9, 10]
+  k: $$tabler:camera$$
+  l: [Colemak]
+  a: top
+  o: -0.7
+  d: false
+- p: [15, 14]
+  k: LC(B)
+  l: [Colemak]
+  draw_separate: true
+- p: [15, 14, 22]
+  k: TMUX COMMAND
+  l: [Colemak]
+  draw_separate: true
+- p: [15, 14, 13]
+  k: TMUX NEW SESSION
+  l: [Colemak]
+  draw_separate: true
+- p: [9, 8]
+  k: {t: switch, h: sticky}
+  l: [Colemak]
+- p: [2, 3]
+  k: ESC
+  l: [Colemak]
+- p: [26, 27]
+  k: $$material:keyboard_tab$$
+  l: [Colemak]
+  a: bottom
+  o: 0.3
+- p: [37, 36]
+  k: {t: alt switch, h: sticky}
+  l: [Colemak]

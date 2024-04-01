@@ -39,7 +39,7 @@ draw() {
 	fi
 }
 
-KBD="corne"
+KBD="kyria_rev3"
 
 parse "$KBD"
 draw "$KBD" --keys-only

@@ -19,7 +19,7 @@
 #include "../chars/math.dtsi"
 #include "../chars/typography.dtsi"
 #include "../layouts/col_main.dtsi"
-#include "../behaviors/combos_36.dtsi"
+#include "../behaviors/combos_50.dtsi"
 #include "../behaviors/hold-tap.dtsi"
 #include "../behaviors/macros.dtsi"
 #include "../behaviors/mod-morph.dtsi"
@@ -52,11 +52,6 @@ XXX         &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX  
             >;
         };
         symbol_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ~    |   !  |  @   |   #  |   $  |   %  |                                         |  +   |  7   |  8   |  9   |  -   |  _   |
-            // |  &    |   '  |  {   |  [   |   (  |   <  |                                         |  =   |  4   |  5   |  6   |  0   |  |   |
-            // |  ^    |   "  |  }   |  ]   |   )  |   >  |  `   |      |      ==     |      |      |  *   |  1   |  2   |  3   |  /   |  \   |
-            //                       |      |      |      |      |      |      ==     |      |      |      |      |      |
             bindings = <
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE        XXX          &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS XXX
@@ -77,7 +72,7 @@ XXX    &mmv_lf     &mmv_dn       &mmv_up     &mmv_rg   &kp PG_UP       &kp HOME 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX &ctrl_alt_left &ctrl_alt_down &ctrl_alt_up &ctrl_alt_right &kp PG_DN XXX XXX XXX XXX           &kp END       &ctrl_left   &ctrl_down    &ctrl_up     &ctrl_right XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-               XXX XXX              XXX       &kp SL     &mo BETTER_NAV     &kp TAB          ___           ___ XXX XXX 
+               XXX XXX         &kp SL     &mo BETTER_NAV  XXX        &kp TAB          ___           ___ XXX XXX 
             >;
         };
         number_layer {
@@ -153,11 +148,6 @@ XXX XXX                             ___         ___          ___            &kp 
             >;
         };
         better_nav_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |         |         | BT_CLR  | BTSEL0  | BTSEL1  | BTSEL2 |                                         | C_BRI_INC | C_VOL_UP | C_MUTE | C_VOL_DN |      |      |
-            // |         |         |         | BTSEL3  | BTSEL4  |        |                                         | C_BRI_DEC | C_PREV   | C_PP   | C_NEXT   |      |      |
-            // | RGB_EFF | RGB_EFR | RGB_BRI | RGB_TOG | RGB_BRD |        |      |      |      |      |      |      |           |          |        |          |      |      |
-            //                     |         |         |         |        |      |      |      |      |      |      |           |          |
             bindings = <
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
 XXX    &mkp_rg     &mkp_md      &mkp_lf    &fmsc_up     &fmsc_dn       &mkp_lf      &fmsc_lf            &cl_mkp_lf   &al_mkp_lf           &fmsc_rg     XXX
@@ -166,7 +156,7 @@ XXX    &fmmv_lf     &fmmv_dn       &fmmv_up     &fmmv_rg   XXX             XXX  
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     XXX          XXX           XXX         XXX         XXX  XXX XXX XXX XXX                   XXX          &win_LEFT    &win_DOWN      &win_UP     &win_RIGHT XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-XXX XXX                             XXX            XXX         XXX             XXX         XXX           XXX
+XXX XXX                             XXX            XXX         XXX             XXX         XXX           XXX    XXX  XXX
             >;
         };
     };
