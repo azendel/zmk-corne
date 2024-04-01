@@ -33,9 +33,9 @@
             // | SHIFT | Z | X | C   | V    | B        | ---      | ---       |==| ---      |          |  N   |  M    |  ,    |  .   |   /   | CTRL |
             //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LCTRL/DEL |==| LSHFT/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
             bindings = <
-            &kp ESC   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  &kp ESC
-            &kp TAB   &kp A &kp S &kp D     &kp F   &kp G                                                       &kp H       &kp J       &kp K     &kp L   &kp SEMI &kp RSHFT
-            &kp LSHFT &kp Z &kp X &kp C     &kp V   &kp B       &none       &none           &none   &none     &kp N       &kp M       &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+            &kp TAB   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SQT  &kp ESC
+            &kp BSPC  &kp A &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O     &kp  XXX
+            &kp smart_shft &kp Z       &kp X       &kp C       &kp D        &kp V          &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &kp XXX 
                                   &none  &kp LGUI &mt LALT ESC &mt LSHFT RET &mt LCTRL DEL          &lt FUN BSPC &lt SYM SPACE   &mt RALT TAB    &lt MED K_APP     &none
             >;
         };
