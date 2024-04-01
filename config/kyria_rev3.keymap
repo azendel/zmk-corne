@@ -34,8 +34,10 @@
             //                 | --- | WIN  | ALT/ESC  | CTRL/RET | LCTRL/DEL |==| LSHFT/BSPC |  SYM/SPACE   | RALT/TAB | MED/MENU   | --- |
             bindings = <
             &kp TAB   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI  &kp XXX
-            &kp BSPC  &kp A &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O     &kp  SQT
-            &smart_shft &kp Z       &kp X       &kp C       &kp D        &kp V          &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &smart_shft 
+            &kp TAB   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI  &kp XXX
+            &kp TAB   &kp Q &kp W &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI  &kp XXX
+//            &kp BSPC  &kp A &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O     &kp  SQT
+//            &smart_shft &kp Z       &kp X       &kp C       &kp D        &kp V          &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  &smart_shft 
                                   &none  &none  &mt LALT ESC &mt LSHFT RET &mt LCTRL DEL          &lt FUN BSPC &lt SYM SPACE   &mt RALT TAB    &lt MED K_APP     &none
             >;
         };
