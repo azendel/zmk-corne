@@ -59,6 +59,12 @@ ZMK_BEHAVIOR(shift_gui, macro,
     bindings = <&macro_press &kp SL &kp GL>, <&macro_release &kp SL &kp GL>;
 )
 
+
+
+ZMK_BEHAVIOR(slack_react, macro,
+    bindings =<&macro_press  &kp CL>, <&macro_press  &kp SL>, <&macro_tap &kp BSLH>,<&macro_release &kp CL>, <&macro_release &kp SL>;
+)
+
   //  bindings = <&kp SL &kp GL>;  -- not working, it ends up calling windows0
 //    bindings = <&macro_press &kp SL>, <&macro_press  &kp GL>, <&macro_release SL>, <&macro_release GL>;
 //    bindings = <&macro_press &kp SL &kp GL>; // terrible idea it will keep it pressed

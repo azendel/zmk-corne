@@ -43,7 +43,7 @@ XXX         &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX  
 
 ZMK_LAYER(symbol_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE        XXX          &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS XXX
+XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE           &slack_react         &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX     &kp LBRC   &kp  LBRC  &kp UNDER    &kp EQUAL XXX             &kp GRAVE    &kp DLLR      &kp  PRCNT     &kp CARET         &kp RPAR XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
