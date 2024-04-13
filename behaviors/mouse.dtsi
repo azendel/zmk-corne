@@ -1,6 +1,10 @@
-#include <dt-bindings/zmk/mouse.h>
-#include <behaviors/mouse_keys.dtsi>
 
+#include <behaviors.dtsi>                                                                                            
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>                                                                                         
+#include "../zmk-nodefree-config/helper.h"                                                                                
+#include "../zmk-nodefree-config/keypos_def/keypos_50keys.h"                                                               
+#include "../config/constants.h"                                                                                                  
 
 // Documentation : https://deploy-preview-778--zmk.netlify.app/docs/behaviors/mouse-emulation/
 // Codes : https://github.com/zmkfirmware/zmk/blob/ee855f4d6736da4d696e74f7875d209c7c173a11/app/include/dt-bindings/zmk/mouse.h
@@ -21,10 +25,10 @@
 #define MOUSE_MOVE_VAL 900
 
 
-#define MOVE_UP MOVE_Y(-MOUSE_MOVE_VAL)
-#define MOVE_DOWN MOVE_Y(MOUSE_MOVE_VAL)
-#define MOVE_LEFT MOVE_X(-MOUSE_MOVE_VAL)
-#define MOVE_RIGHT MOVE_X(MOUSE_MOVE_VAL)
+#define MMOVE_UP MOVE_Y(-MOUSE_MOVE_VAL)
+#define MMOVE_DOWN MOVE_Y(MOUSE_MOVE_VAL)
+#define MMOVE_LEFT MOVE_X(-MOUSE_MOVE_VAL)
+#define MMOVE_RIGHT MOVE_X(MOUSE_MOVE_VAL)
 
 #define SCRL_UP MOVE_Y(MOUSE_SCRL_VAL)
 #define SCRL_DOWN MOVE_Y(-MOUSE_SCRL_VAL)
@@ -33,10 +37,10 @@
 
 
 // Move cursor
-#define mmv_up mmv MOVE_UP
-#define mmv_dn mmv MOVE_DOWN
-#define mmv_lf mmv MOVE_LEFT
-#define mmv_rg mmv MOVE_RIGHT
+#define mmv_up mmv MMOVE_UP
+#define mmv_dn mmv MMOVE_DOWN
+#define mmv_lf mmv MMOVE_LEFT
+#define mmv_rg mmv MMOVE_RIGHT
 
 // Mouse buttons
 #define mkp_lf mkp LCLK

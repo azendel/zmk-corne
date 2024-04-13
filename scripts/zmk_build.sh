@@ -167,7 +167,8 @@ fi
 
 # usage: compile_board board
 compile_board() {
-	BUILD_DIR="${1}_$SUFFIX"
+	no_spaces="$(echo "${*:2}" | awk '{ gsub(" ", "_", $0); print $0 }')"
+	BUILD_DIR="${no_spaces}_$SUFFIX"
 	LOGFILE="$LOG_DIR/zmk_build_$1.log"
 	[[ $MULTITHREAD = "true" ]] || echo -en "\n$(tput setaf 2)Building ${@:1}... $(tput sgr0)\n"
 	[[ $MULTITHREAD = "true" ]] && echo -e "$(tput setaf 2)Building ${@:1}... $(tput sgr0)\n"
@@ -190,13 +191,13 @@ compile_board() {
 		else
 			TYPE="bin"
 		fi
-		OUTPUT="$OUTPUT_DIR/$1-zmk.$TYPE"
+		OUTPUT="$OUTPUT_DIR/$no_spaces-zmk.$TYPE"
 		[[ -f $OUTPUT ]] && [[ ! -L $OUTPUT ]] && mv "$OUTPUT" "$OUTPUT.bak"
 		cp "$HOST_ZMK_DIR/app/build/$BUILD_DIR/zephyr/zmk.$TYPE" "$OUTPUT"
 	else
 		echo
 		cat "$LOGFILE"
-		echo "$(tput setaf 1)Error: $1 failed$(tput sgr0)"
+		echo "$(tput setaf 1)Error: $no_spaces-zmk failed$(tput sgr0)"
 	fi
 }
 
