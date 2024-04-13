@@ -53,10 +53,10 @@ ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,   COL  , COMBO_TERM_FAST)
 
 ZMK_COMBO(tab,   &kp TAB,       LB3 LB2,   COL  , COMBO_TERM_FAST)
 
-// ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     COL, COMBO_TERM_FAST)
-ZMK_COMBO(alt_lay_switch,   &sl ALT_SWITCH,       RB3 RB2,     COL, COMBO_TERM_FAST)
 
 // Toggle Mouse Layer - active on base and mouse layers
 // ZMKR_COMBO(toggle_mouse, &tog MOU, LT1 LT4, MOU COL)
+
+
 
 

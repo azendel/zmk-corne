@@ -64,9 +64,9 @@ layers:
   - (
   - +
   - ''
-  - ''
+  - $$material:backspace$$
   - '{'
-  - '{'
+  - '}'
   - _
   - '='
   - ''
@@ -492,3 +492,15 @@ combos:
 - p: [37, 36]
   k: {t: alt switch, h: sticky}
   l: [Colemak]
+- p: [35, 36]
+  k: '['
+  l: [Colemak]
+- p: [36, 37]
+  k: ']'
+  l: [Colemak]
+- p: [35, 36]
+  k: '{'
+  l: [Numbers]
+- p: [36, 37]
+  k: '}'
+  l: [Numbers]

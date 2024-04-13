@@ -61,3 +61,7 @@ ZMK_COMBO(alt_lay_switch,   &sl ALT_SWITCH,       RB3 RB2,     COL, COMBO_TERM_F
 // ZMKR_COMBO(toggle_mouse, &tog MOU, LT1 LT4, MOU COL)
 
 
+ZMK_COMBO(lbkt,  &kp LBKT,      RB1 RB2,     COL   , COMBO_TERM_FAST)
+ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     COL     , COMBO_TERM_FAST)
+ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,     NUM    , COMBO_TERM_FAST)
+ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,     NUM    , COMBO_TERM_FAST)
