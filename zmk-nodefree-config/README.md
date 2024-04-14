@@ -58,11 +58,12 @@ hold-tap, key-repeat, macro, mod-morph, sticky-key, tap-dance or tri-state.
 * `name`: a unique string chosen by the user (e.g., `my_behavior`). The new behavior can
   be added to the keymap using `&name` (e.g., `&my_behavior`).
 * `type`: the behavior to be created. It must be one of the following:
-  `caps_word`, `hold_tap`, `key_repeat`, `macro`, `mod_morph`, `sticky_key`,
-  `tap_dance` or `tri_state`. Note that multiword behaviors are separated by underscores (`_`).
+  `caps_word`, `hold_tap`, `key_repeat`, `macro`, `macro_one_param`,
+  `macro_two_param`, `mod_morph`, `sticky_key`, `tap_dance` or `tri_state`.
+  Note that multiword behaviors are separated by underscores (`_`).
 * `specification`: the custom behavior code. It should contain the
   body of the corresponding [ZMK behavior configuration](https://zmk.dev/docs/config/behaviors)
-  without the `label`, `#binding-cells` and `compatible` properties and without the
+  without the `#binding-cells` and `compatible` properties and without the
   surrounding node-specification.
 
 #### Example 1: Creating a custom "homerow mod" tap-hold behavior
@@ -72,7 +73,6 @@ ZMK_BEHAVIOR(hrm, hold_tap,
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    global-quick-tap;
     bindings = <&kp>, <&kp>;
 )
 ```
@@ -119,7 +119,7 @@ the "lowest" one ([see here for details](https://zmk.dev/docs/features/keymaps#l
 
 #### Example usage
 ```C++
-ZMK_KEYMAP(default_layer,
+ZMK_LAYER(default_layer,
      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
           &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp SQT
      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -283,7 +283,8 @@ The creates "umlaut" pairs that can be added to the keymap using `&de_ae`, `&de_
 * On Windows and macOS there are additional requirements for unicode input to work. On
   Windows, one must install [WinCompose](https://github.com/samhocevar/wincompose) for
   full support (or use Win-Alt-Codes for limited support in select software). On
-  macOS one must enable unicode input in the system preferences.
+  macOS one must enable unicode input in the system preferences, by selecting 
+  `Unicode Hex Input` as input source.
 
 ### International characters
 
@@ -373,7 +374,6 @@ ZMK_BEHAVIOR(hml, hold_tap,  // left-hand HRMs
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    global-quick-tap;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
 )
@@ -382,7 +382,6 @@ ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
     flavor = "balanced";
     tapping-term-ms = <280>;
     quick-tap-ms = <125>;
-    global-quick-tap;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
 )
@@ -390,23 +389,34 @@ ZMK_BEHAVIOR(hmr, hold_tap,  // right-hand HRMs
 
 ## Changelog
 
-* **3/7/2023:** Keypos definitions for 44-key boards like Jian/Jorne (added by 
-  [@alparo](https://github.com/alparo)) and for Kinesis Advantage 360 Pro
+* **8/7/2023:** Keypos definition for Glove 80 (added by [@hylophile](https://github.com/hylophile))
+* **6/27/2023:** Support for parametrized macros (added by
+  [@JeffDess](https://github.com/JeffDess))
+* **6/4/2023:** Keypos definitions for Kyria and Hillside keyboards (added by
+  [@autoferrit](https://github.com/autoferrit))
+* **5/21/2023:** Keypos definitions for Sofle (added by
+  [@titus-ong](https://github.com/titus-ong))
+* **4/23/2023:** Support for dynamic-macros, requires PR #1351 (added by
+  [@theol0403](https://github.com/theol0403))
+* **3/7/2023:** Keypos definitions for 44-key boards like Jian/Jorne (added by
+  [@alparo](https://github.com/alparo)) and for Kinesis Adv 360 Pro
 * **1/3/2023:** Optional `TIMEOUT` argument for `ZMK_COMBO` subsuming the now
   depreciated `ZMK_COMBO_ADV`
-* **1/2/2023:** Optional sensor-bindings argument to `ZMK_LAYER` + keypos definitions
-  for lily58 (added by [@laureyn](https://github.com/laureyn))
+* **1/2/2023:** Optional sensor-bindings argument to `ZMK_LAYER` + keypos
+  definitions for lily58 (added by [@laureyn](https://github.com/laureyn))
 * **12/28/2022:** French chars (added by [@artggd](https://github.com/artggd))
 * **12/18/2022:** Use layer name as display label
-* **11/16/2022:** Danish chars (added by [@zonique2k](https://github.com/zonique2k))
-* **11/09/2022:** Support for tri-state behavior (aka "swapper"), requires PR #1366
+* **11/16/2022:** Danish chars (added by
+  [@zonique2k](https://github.com/zonique2k))
+* **11/09/2022:** Support for tri-state behavior (aka "swapper"), requires PR
+  #1366
 * **10/16/2022:** Remove dependency on PR #1412 as it is now merged into main
-* **10/08/2022:** Remove depreciated masked-mods option from unicode helper
+* **10/8/2022:** Remove depreciated masked-mods option from unicode helper
 * **9/11/2022:** Support for Windows-Alt-Codes
-* **8/05/2022:** New macro `ZMK_COMBO_ADV` for "advanced" combo setups. **Note:**
-  depreciated as of 1/3/2023
-* **7/31/2022:** Switch unicode dependency from PR #1114 to
-  [PR #1412](https://github.com/zmkfirmware/zmk/pull/1412)
+* **8/5/2022:** New macro `ZMK_COMBO_ADV` for "advanced" combo setups.
+  **Note:** depreciated as of 1/3/2023
+* **7/31/2022:** Switch unicode dependency from PR #1114 to [PR
+  #1412](https://github.com/zmkfirmware/zmk/pull/1412)
 
 [^1]: If building with Github Actions, using submodules requires replacing
   `.github/workflows/build.yml` in the local `zmk-config` with

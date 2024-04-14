@@ -172,8 +172,8 @@ compile_board() {
 	shields="${@:2}"
 	BUILD_DIR="${no_spaces}_$SUFFIX"
 	LOGFILE="$LOG_DIR/zmk_build_$1.log"
-	[[ $MULTITHREAD = "true" ]] || echo -en "\n$(tput setaf 2)Building ${@:1}... $(tput sgr0)\n"
-	[[ $MULTITHREAD = "true" ]] && echo -e "$(tput setaf 2)Building ${@:1}... $(tput sgr0)\n"
+	[[ $MULTITHREAD = "true" ]] || echo -en "\n$(tput setaf 2)Building ${shields}... $(tput sgr0)\n"
+	[[ $MULTITHREAD = "true" ]] && echo -e "$(tput setaf 2)Building ${shields}... $(tput sgr0)\n"
 
 	echo "$DOCKER_PREFIX west build  -s /workspace/zmk/app -d "build/$BUILD_DIR" -p -b $1 $WEST_OPTS \
 		-- -DZMK_CONFIG="$CONFIG_DIR" \

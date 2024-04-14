@@ -26,6 +26,8 @@
 #define AR RALT
 #define SR RSHFT
 
+#define CANCEL &kp K_CANCEL // cancel caps-word, num-word and smart-mouse
+
 // OS
 #define WINDOWS 0
 #define LINUX 1

@@ -25,31 +25,101 @@
 #include "../behaviors/mod-morph.dtsi"
 #include "../behaviors/mouse.dtsi"
 
+/* Nav cluster */
 
-/* Uncomment this block if using RGB
-&led_strip {
-    chain-length = <6>;
-    // chain-length = <31>; // Uncomment if using both per-key and underglow LEDs
-    // chain-length = <25>; // Uncomment if using only per-key LEDs.
+// long-tap action on hold, short-tap action on all interrupts
+#define MT_CORE \
+    flavor = "tap-preferred"; \
+    tapping-term-ms = <220>; \
+    quick-tap-ms = <220>; \
+    hold-trigger-key-positions = <0>;
+
+&mt { MT_CORE };
+ZMK_BEHAVIOR(mt_home, hold_tap, bindings = <&masked_home>, <&kp>; MT_CORE)
+ZMK_BEHAVIOR(mt_end,  hold_tap,  bindings = <&masked_end>, <&kp>; MT_CORE)
+
+#define NAV_LEFT  &mt_home 0   LEFT    // tap: left  | long-tap: beginning of line
+#define NAV_RIGHT &mt_end 0    RIGHT   // tap: right | long-tap: end       of line
+#define NAV_UP    &mt LC(HOME) UP      // tap: up    | long-tap: beginning of document
+#define NAV_DOWN  &mt LC(END)  DOWN    // tap: down  | long-tap: end       of document
+#define NAV_BSPC  &mt LC(BSPC) BSPC    // tap: bspc  | long-tap: delete word backward
+#define NAV_DEL   &mt LC(DEL)  DEL     // tap: del   | long-tap: delete word forward
+
+// mask CTRL when holding left/right to avoid accidental jumps to beginning/end of document
+#define MASK_MODS(NAME, MODS, BINDING) \
+    ZMK_BEHAVIOR(NAME, mod_morph, \
+        bindings = <BINDING>, <BINDING>; \
+        mods = <MODS>; \
+    )
+MASK_MODS(masked_home, (MOD_LCTL), &kp HOME)
+MASK_MODS(masked_end,  (MOD_LCTL), &kp END)
+
+
+
+/* Global settings */
+
+
+&sk {  // sticky-key config
+    release-after-ms = <900>;  // release after 0.6s
+    quick-release;             // no double capitalization when rolling keys
 };
- */
+
+&sl {  // sticky-layer config
+    ignore-modifiers;          // allow chording sticky mods & layers
+};
+
+
+/* Homerow mods */
+
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4  // left hand
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right hand
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumbs
+
+
+
+
+#define QUICK_TAP_MS 175
+
+&num_word {  // num-word, requires PR #1451
+    layers = <NUM>;
+    continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL>;
+};
+
+
+ZMK_BEHAVIOR(num_dance, tap_dance,
+    tapping-term-ms = <200>;
+    bindings = <&num_word>, <&sl NUM>;  // reverse this for sticky-num on single tap
+)
+
+#define SMART_NUM &smart_num NUM 0
+#// tap: num-word | double-tap: sticky num-layer | hold: num-layer
+ZMK_BEHAVIOR(smart_num, hold_tap,
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <QUICK_TAP_MS>;
+    bindings = <&mo>, <&num_dance>;
+)
 
 ZMK_LAYER(colemak,
-&smart_shft &kp Q  &kp W       &kp F     &kp P   &kp B                                                       &kp J       &kp L       &kp U     &kp Y   &kp SEMI   &smart_shft
-&ctrl_bspc    &kp A  &hml AL R   &hml CL S   &hml SL T    &kp G          &kp M       &hmr SR N     &hmr CL E     &hmr AR I       &kp O  &kp SQT 
-XXX         &kp Z  &kp X       &kp C       &kp D        &kp V  XXX XXX XXX XXX     &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  XXX
-                                  XXX XXX  &kp TAB  &kp ESC &lt NUM SPACE             &lt NAV RETURN   &mo SYM  &mo FUNC   XXX  XXX
+// ╭──────────╭───────────┬───────────┬───────────┬────────────┬────────────╮         ╭───────────┬─────────────┬─────────────┬────────────┬────────────┬────────────╮
+    &kp TAB     &kp Q        &kp W       &kp F     &kp P         &kp B                   &kp J       &kp L         &kp U        &kp Y         &kp SEMI      XXX
+//  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┼────────────┤────────────┤
+    &kp BSPC    &hml GL A    &hml AL R   &hml CL S &hml SL T     &kp G                   &kp M       &hmr SR N     &hmr CL E    &hmr AR I     &hml GL O  &kp SQT 
+//  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┼────────────┤────────────┤
+    XXX         &kp Z        &kp X       &kp C     &kp D         &kp V  XXX XXX XXX XXX  &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  XXX
+// ╰──────────├───────────┴───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┴────────────╯────────────╯
+                                  XXX XXX  &lt FUNC ESC  &lt SYM RETURN &lt NAV SPACE                &smart_shft   SMART_NUM  XXX   XXX  XXX
 )
 
 ZMK_LAYER(symbol_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-XXX     &kp LBKT   &kp RBKT      &kp COLON       &kp PIPE           &slack_react         &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS XXX
+XXX     &kp LBKT   &kp RBKT  &kp BSLH       &kp PIPE           &slack_react         &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS XXX
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-&kp BSPC     &kp LBRC   &kp  RBRC  &kp UNDER    &kp EQUAL XXX             &kp GRAVE    &kp DLLR      &kp  PRCNT     &kp CARET         &kp RPAR XXX
-// ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     &kp LT      &kp  GT     XXX        &kp DQT         &kp BSLH  XXX XXX XXX XXX           XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
+&kp BSPC     &kp LBRC   &kp  RBRC  &kp UNDER    &kp EQUAL &kp K_CONTEXT_MENU             &kp GRAVE    &kp DLLR      &kp  PRCNT     &kp CARET         &kp RPAR XXX
+// ├───────────┼───────────┼───────────┼────────────┼──────────── ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
+XXX     XXX      XXX     XXX        XXX       XXX    XXX XXX XXX XXX           XXX    &kp EXCL      &kp AT         &kp HASH     &kp MINUS XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-                          XXX     XXX     XXX     XXX     XXX              XXX     XXX     XXX     XXX     XXX    
+                          XXX     XXX     XXX     XXX     XXX              &mo FUNC     XXX     XXX     XXX     XXX    
 )
 
 ZMK_LAYER(nav_layer,
@@ -60,27 +130,27 @@ XXX      &mkp_rg     &mkp_md      &mkp_lf      &msc_up     &msc_dn       &mkp_lf
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
 XXX &ctrl_alt_left &ctrl_alt_down &ctrl_alt_up &ctrl_alt_right &kp PG_DN XXX XXX XXX XXX           &kp END       &ctrl_left   &ctrl_down    &ctrl_up     &ctrl_right XXX
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-               XXX XXX     XXX    &kp SL     &mo BETTER_NAV           XXX          XXX       XXX XXX XXX 
+               XXX XXX     XXX    XXX     XXX                &mo BETTER_NAV            &kp SL       XXX XXX XXX 
 )
 
 ZMK_LAYER(number_layer,
-// ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-XXX     XXX         &chinese   &kp CAPSLOCK  &ctrl_bspc   &kp BSPC      &kp DEL      &kp N7        &kp N8        &kp N9       &kp PLUS XXX 
-// ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX     &kp GL      &kp AL      &kp CL      &kp SL       XXX            &kp DOT     &kp N4        &kp N5        &kp N6       &kp N0 XXX 
-// ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX XXX          XXX         XXX         &kp K_CONTEXT_MENU XXX XXX XXX XXX                        XXX               &kp INS    &kp N1        &kp N2        &kp N3       &kp MINUS XXX 
-// ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
-    XXX           XXX        XXX          XXX         XXX             &mo FUNC        XXX        XXX              XXX           XXX 
+/// ╭──────────╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────┬────────────╮
+      XXX          ___        &kp N7      &kp N8      &kp N9        ___           ___           ___           ___           ___        ___           ___        
+//  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤─────────────┤
+      XXX       &hml GL N0 &hml AL N4  &hml CL N5   &hml SL N6     ___         ___           ___           ___           ___        ___           ___        
+//  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤─────────────┤
+      XXX          ___        &kp N1      &kp N2      &kp N3     ___ XXX XXX XXX XXX         ___           ___           ___           ___        ___           ___   
+// ╰──────────a╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯────────────╯
+XXX XXX                             ___         ___          ___            ___         ___       XXX XXX XXX
 )
                     
 ZMK_LAYER(func_layer,
 // ╭───────────┬───────────┬───────────┬────────────┬────────────╮ ╭───────────┬─────────────┬─────────────┬────────────┬────────────╮
-XXX      &kp F7      &kp F8      &kp F9      &kp F10       &kp F13        &kp C_PP    &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP &kp C_NEXT     XXX 
+XXX      &kp F7      &kp F8      &kp F9      &kp F10       &kp DEL        &kp C_PP    &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP &kp C_NEXT     XXX 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX      &kp F4      &kp F5      &kp F6      &kp F11       &kp F14        XXX         &kp SL        &kp CL        &kp AL       &kp GL XXX 
+XXX      &kp F4      &kp F5      &kp F6      &kp F11       &kp F13        XXX         &kp SL        &kp CL        &kp AL       &kp GL XXX 
 // ├───────────┼───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┼────────────┤
-XXX      &kp F1     &kp F2       &kp F3     &kp F12        &kp F15  XXX XXX XXX XXX                 &out OUT_TOG &bt BT_PRV   &ext_power EP_ON  &ext_power EP_TOG &bt BT_NXT  XXX 
+XXX      &kp F1     &kp F2       &kp F3     &kp F12        &kp INS  XXX XXX XXX XXX                 &out OUT_TOG &bt BT_PRV   &ext_power EP_ON  &ext_power EP_TOG &bt BT_NXT  XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                              XXX         &kp GL        XXX             ___     &bt BT_CLR ___ XXX XXX 
 )       

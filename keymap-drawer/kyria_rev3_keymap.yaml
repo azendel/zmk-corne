@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: splitkb/kyria/rev1}
 layers:
   Colemak:
-  - {t: SHIFT, h: sticky, s: CAPS WORD}
+  - $$material:keyboard_tab$$
   - Q
   - W
   - F
@@ -12,9 +12,9 @@ layers:
   - U
   - Y
   - ;
-  - {t: SHIFT, h: sticky, s: CAPS WORD}
-  - '&ctrl_bspc'
-  - A
+  - ''
+  - $$material:backspace$$
+  - {t: A, h: GUI}
   - {t: R, h: ALT}
   - {t: S, h: CTRL}
   - {t: T, h: SHIFT}
@@ -23,7 +23,7 @@ layers:
   - {t: N, h: RSHFT}
   - {t: E, h: CTRL}
   - {t: I, h: RALT}
-  - O
+  - {t: O, h: GUI}
   - ''''
   - ''
   - Z
@@ -43,19 +43,19 @@ layers:
   - ''
   - ''
   - ''
-  - $$material:keyboard_tab$$
-  - ESC
-  - {t: '$$tabler:space$$', h: Numbers}
-  - {t: RETURN, h: Navigation}
-  - Symbols
-  - function
+  - {t: ESC, h: function}
+  - {t: RETURN, h: Symbols}
+  - {t: '$$tabler:space$$', h: Navigation}
+  - {t: SHIFT, h: sticky, s: CAPS WORD}
+  - {t: '&num_dance', h: Numbers}
+  - ''
   - ''
   - ''
   Symbols:
   - ''
   - '['
   - ']'
-  - ':'
+  - \
   - '|'
   - '&slack_react'
   - '~'
@@ -69,7 +69,7 @@ layers:
   - '}'
   - _
   - '='
-  - ''
+  - CONTEXT MENU
   - '`'
   - $
   - '%'
@@ -77,11 +77,11 @@ layers:
   - )
   - ''
   - ''
-  - <
-  - '>'
   - ''
-  - '"'
-  - \
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -95,10 +95,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
   - {type: held}
+  - ''
+  - function
+  - ''
   - ''
   - ''
   - ''
@@ -116,10 +116,10 @@ layers:
   - '&alt_right'
   - ''
   - $$material:backspace$$
-  - $$cursor-left$$
-  - $$cursor-down$$
-  - $$cursor-up$$
-  - $$cursor-right$$
+  - '&mmv MOVE_X(-900)'
+  - '&mmv MOVE_Y(900)'
+  - '&mmv MOVE_Y(-900)'
+  - '&mmv MOVE_X(900)'
   - PAGE UP
   - HOME
   - $$tabler:arrow-big-left$$
@@ -146,61 +146,61 @@ layers:
   - ''
   - ''
   - ''
-  - SHIFT
-  - BETTER_NAV
-  - {type: held}
   - ''
+  - {type: held}
+  - BETTER_NAV
+  - SHIFT
   - ''
   - ''
   - ''
   Numbers:
   - ''
-  - ''
-  - '&chinese'
-  - CAPS LOCK
-  - '&ctrl_bspc'
-  - $$material:backspace$$
-  - $$delete$$
+  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
-  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
+  - {t: '0', h: GUI}
+  - {t: '4', h: ALT}
+  - {t: '5', h: CTRL}
+  - {t: '6', h: SHIFT}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - GUI
-  - ALT
-  - CTRL
-  - SHIFT
-  - ''
-  - .
-  - '4'
-  - '5'
-  - '6'
-  - '0'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - CONTEXT MENU
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - INSERT
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
-  - '-'
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - function
-  - ''
   - ''
   - ''
   - ''
@@ -210,7 +210,7 @@ layers:
   - F8
   - F9
   - F10
-  - F13
+  - $$delete$$
   - $$play-pause$$
   - $$tabler:player-track-prev-filled$$
   - $$tabler:volume-2$$
@@ -222,7 +222,7 @@ layers:
   - F5
   - F6
   - F11
-  - F14
+  - F13
   - ''
   - SHIFT
   - CTRL
@@ -234,7 +234,7 @@ layers:
   - F2
   - F3
   - F12
-  - F15
+  - INSERT
   - ''
   - ''
   - ''
@@ -247,12 +247,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - GUI
   - {type: held}
+  - {t: GUI, type: held}
+  - ''
   - {type: held}
   - $$bt-clear$$
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - ''
   switch:

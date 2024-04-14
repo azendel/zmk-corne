@@ -16,6 +16,10 @@ ZMK_BEHAVIOR(smart_shft, mod_morph,
     mods = <(MOD_LSFT)>;
 )
 
+//&caps_word {  // mods deactivate caps-word, requires PR #1451
+//    /delete-property/ ignore-modifiers;
+//};
+
 // reuse basic mod-morph scheme
 #define SIMPLE_MORPH(NAME, MOD, BINDING1, BINDING2) \
     ZMK_BEHAVIOR(NAME, mod_morph, \
