@@ -168,17 +168,19 @@ fi
 # usage: compile_board board
 compile_board() {
 	no_spaces="$(echo "${*:2}" | awk '{ gsub(" ", "_", $0); print $0 }')"
+	no_spaces="$(echo "$no_spaces" | awk '{ gsub("\"", "", $0); print $0 }')"
+	shields="${@:2}"
 	BUILD_DIR="${no_spaces}_$SUFFIX"
 	LOGFILE="$LOG_DIR/zmk_build_$1.log"
 	[[ $MULTITHREAD = "true" ]] || echo -en "\n$(tput setaf 2)Building ${@:1}... $(tput sgr0)\n"
 	[[ $MULTITHREAD = "true" ]] && echo -e "$(tput setaf 2)Building ${@:1}... $(tput sgr0)\n"
 
-	echo "$DOCKER_PREFIX west build  -s /workspace/zmk/app -d "build/$BUILD_DIR" -b $1 $WEST_OPTS \
+	echo "$DOCKER_PREFIX west build  -s /workspace/zmk/app -d "build/$BUILD_DIR" -p -b $1 $WEST_OPTS \
 		-- -DZMK_CONFIG="$CONFIG_DIR" \
 		-DSHIELD="${@:2}" \
 		-Wno-dev >"$LOGFILE" 2>&1"
 
-	$DOCKER_PREFIX west build -s /workspace/zmk/app -d "build/$BUILD_DIR" -b $1 $WEST_OPTS \
+	$DOCKER_PREFIX west build -s /workspace/zmk/app -d "build/$BUILD_DIR" -p -b $1 $WEST_OPTS \
 		-- -DZMK_CONFIG="$CONFIG_DIR" \
 		-DSHIELD="${@:2}" \
 		-Wno-dev >"$LOGFILE" 2>&1
@@ -201,5 +203,5 @@ compile_board() {
 	fi
 }
 
-compile_board nice_nano_v2 kyria_rev3_right nice_view_adapter nice_view
-compile_board nice_nano_v2 kyria_rev3_left nice_view_adapter nice_view
+compile_board nice_nano_v2 "kyria_rev3_right nice_view_adapter nice_view"
+compile_board nice_nano_v2 "kyria_rev3_left nice_view_adapter nice_view"
