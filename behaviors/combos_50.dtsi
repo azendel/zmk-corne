@@ -55,13 +55,26 @@ ZMK_COMBO(esc,   &kp ESC,       LT3 LT2,   COL  , COMBO_TERM_FAST)
 ZMK_COMBO(tab,   &kp TAB,       LB3 LB2,   COL  , COMBO_TERM_FAST)
 
 // ZMK_COMBO(ret,   &kp RETURN,    LT2 LT1,     COL, COMBO_TERM_FAST)
-ZMK_COMBO(alt_lay_switch,   &sl ALT_SWITCH,       RB3 RB2,     COL, COMBO_TERM_FAST)
+// ZMK_COMBO(alt_lay_switch,   &sl ALT_SWITCH,       RB3 RB2,     COL, COMBO_TERM_FAST)
 
 // Toggle Mouse Layer - active on base and mouse layers
 // ZMKR_COMBO(toggle_mouse, &tog MOU, LT1 LT4, MOU COL)
 
+// right hand
+ZMK_COMBO(lbkt,  &kp LBKT,      RB1 RB2,     COL    , COMBO_TERM_FAST)
+ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     COL    , COMBO_TERM_FAST)
+ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,     NUM  NAV  , COMBO_TERM_FAST)
+ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,     NUM  NAV  , COMBO_TERM_FAST)
 
-ZMK_COMBO(lbkt,  &kp LBKT,      RB1 RB2,     COL   , COMBO_TERM_FAST)
-ZMK_COMBO(rbkt,  &kp RBKT,      RB2 RB3,     COL     , COMBO_TERM_FAST)
-ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,     NUM    , COMBO_TERM_FAST)
-ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,     NUM    , COMBO_TERM_FAST)
+ZMK_COMBO(minus,  &kp MINUS,      RM2 RM3,     COL NUM  , COMBO_TERM_FAST)
+ZMK_COMBO(excl,  &kp EXCL ,      RM1 RM2,     COL NUM  , COMBO_TERM_FAST)
+
+// left hand 
+ZMK_COMBO(pipe,   &kp PIPE,       LT1  LT2,   COL  NUM , COMBO_TERM_FAST)
+ZMK_COMBO(equal,   &kp EQUAL,       LM1  LM2,   COL  NUM , COMBO_TERM_FAST)
+ZMK_COMBO(under,   &kp UNDER,       LM3   LM2,   COL  NUM , COMBO_TERM_FAST)
+ZMK_COMBO(bslh,   &kp BSLH,       LM3   LM4,   COL  NUM , COMBO_TERM_FAST)
+
+
+
+
