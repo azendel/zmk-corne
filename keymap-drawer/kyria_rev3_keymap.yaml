@@ -98,7 +98,7 @@ layers:
   - {type: held}
   - ''
   - function
-  - ''
+  - CANCEL
   - ''
   - ''
   - ''
@@ -483,12 +483,10 @@ combos:
   l: [Colemak]
 - p: [2, 3]
   k: ESC
+  l: [Colemak, Numbers]
+- p: [7, 8]
+  k: '&'
   l: [Colemak]
-- p: [26, 27]
-  k: $$material:keyboard_tab$$
-  l: [Colemak]
-  a: bottom
-  o: 0.3
 - p: [35, 36]
   k: '['
   l: [Colemak]
@@ -501,21 +499,33 @@ combos:
 - p: [36, 37]
   k: '}'
   l: [Numbers, Navigation]
-- p: [20, 21]
-  k: minus
-  l: [Colemak, Numbers]
 - p: [19, 20]
+  k: (
+  l: [Colemak, Numbers]
+- p: [21, 20]
+  k: )
+  l: [Colemak, Numbers]
+- p: [22, 21]
   k: '!'
   l: [Colemak, Numbers]
+- p: [38, 37]
+  k: '*'
+  l: [Colemak]
 - p: [4, 3]
   k: '|'
   l: [Colemak, Numbers]
 - p: [16, 15]
   k: '='
   l: [Colemak, Numbers]
-- p: [14, 15]
+- p: [28, 27]
   k: _
   l: [Colemak, Numbers]
-- p: [14, 13]
+- p: [26, 25]
   k: \
+  l: [Colemak, Numbers]
+- p: [15, 14]
+  k: '-'
+  l: [Colemak, Numbers]
+- p: [14, 13]
+  k: +
   l: [Colemak, Numbers]

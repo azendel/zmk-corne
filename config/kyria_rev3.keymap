@@ -119,7 +119,7 @@ ZMK_LAYER(symbol_layer,
 //  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┼────────────┤────────────┤
       XXX         XXX        XXX         XXX          XXX        XXX    XXX XXX XXX XXX   XXX       &kp EXCL      &kp AT         &kp HASH     &kp MINUS     XXX
 // ╰──────────├───────────┴───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┴────────────╯────────────╯
-                          XXX     XXX     XXX     XXX     XXX              &mo FUNC     XXX     XXX     XXX     XXX    
+                          XXX     XXX     XXX     XXX     XXX              &mo FUNC     CANCEL     XXX     XXX     XXX    
 )
 
 ZMK_LAYER(nav_layer,
