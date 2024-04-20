@@ -43,8 +43,8 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ESC, h: function}
-  - {t: RETURN, h: Symbols}
+  - {t: ESC, h: Symbols}
+  - {t: RETURN, h: function}
   - {t: '$$tabler:space$$', h: Navigation}
   - {t: SHIFT, h: sticky, s: CAPS WORD}
   - {t: '&num_dance', h: Numbers}
@@ -53,28 +53,27 @@ layers:
   - ''
   Symbols:
   - ''
-  - '['
-  - ']'
-  - \
-  - '|'
+  - ''
+  - ''
+  - ''
+  - ''
   - '&slack_react'
   - '~'
-  - '&'
-  - '*'
-  - (
-  - +
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - $$material:backspace$$
-  - '{'
-  - '}'
-  - _
-  - '='
+  - ''
+  - ''
+  - ''
+  - ''
   - CONTEXT MENU
-  - '`'
+  - ''
   - $
   - '%'
   - ^
-  - )
   - ''
   - ''
   - ''
@@ -87,15 +86,16 @@ layers:
   - ''
   - ''
   - ''
-  - '!'
+  - ''
+  - ''
   - '@'
   - '#'
-  - '-'
   - ''
   - ''
   - ''
   - ''
   - {type: held}
+  - ''
   - ''
   - function
   - CANCEL
@@ -459,6 +459,57 @@ layers:
   - ''
   - ''
   - ''
+  mouse:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$material:right_click$$
+  - $$click-middle$$
+  - $$material:left_click$$
+  - '&msc MOVE_Y(15)'
+  - '&msc MOVE_Y(-15)'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_X(-900)'
+  - '&mmv MOVE_Y(900)'
+  - '&mmv MOVE_Y(-900)'
+  - '&mmv MOVE_X(900)'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - '&mmv MOVE_X(-3200)'
+  - '&mmv MOVE_Y(3200)'
+  - '&mmv MOVE_Y(-3200)'
+  - '&mmv MOVE_X(3200)'
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$material:left_click$$
+  - $$material:right_click$$
+  - {t: ▽, type: trans}
+  - ''
+  - ''
 combos:
 - p: [9, 10]
   k: $$tabler:camera$$
@@ -511,6 +562,9 @@ combos:
 - p: [38, 37]
   k: '*'
   l: [Colemak]
+- p: [19, 21]
+  k: '`'
+  l: [Colemak]
 - p: [4, 3]
   k: '|'
   l: [Colemak, Numbers]
@@ -523,7 +577,13 @@ combos:
 - p: [26, 25]
   k: \
   l: [Colemak, Numbers]
-- p: [15, 14]
+- p: [2, 1]
+  k: '~'
+  l: [Colemak, Numbers]
+- p: [2, 4]
+  k: '&smart_mouse'
+  l: [Colemak, Navigation, Numbers]
+- p: [27, 26]
   k: '-'
   l: [Colemak, Numbers]
 - p: [14, 13]

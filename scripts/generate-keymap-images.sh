@@ -19,7 +19,8 @@ parse() {
 		"switch" \
 		"alt switch" \
 		"win switch" \
-		"BETTER_NAV" >"$KMD/$KBD_NAME"_keymap.yaml \
+		"BETTER_NAV" \
+		"mouse" >"$KMD/$KBD_NAME"_keymap.yaml \
 		; then
 		echo "Keymap Parsed"
 	else

@@ -70,15 +70,26 @@ ZMK_COMBO(lpar,  &kp LPAR,      RM1 RM2,     COL NUM  , COMBO_TERM_FAST)
 ZMK_COMBO(rpar,  &kp RPAR,      RM3 RM2 ,     COL NUM  , COMBO_TERM_FAST)
 ZMK_COMBO(excl,  &kp EXCL ,      RM4 RM3,     COL NUM  , COMBO_TERM_FAST)
 ZMK_COMBO(star,  &kp STAR,      RB4 RB3,     COL    , COMBO_TERM_FAST)
+ZMK_COMBO(grave,  &kp GRAVE,      RM1 RM3,     COL    , COMBO_TERM_FAST)
+
 
 // left hand 
 ZMK_COMBO(pipe,   &kp PIPE,       LT1  LT2,   COL  NUM , COMBO_TERM_FAST)
 ZMK_COMBO(equal,   &kp EQUAL,     LM1  LM2,   COL  NUM , COMBO_TERM_FAST)
 ZMK_COMBO(zunder,   &kp UNDER,     LB1  LB2,   COL  NUM , COMBO_TERM_FAST)
 ZMK_COMBO(bslh,   &kp BSLH,       LB3   LB4,   COL  NUM , COMBO_TERM_FAST)
+ZMK_COMBO(tilde,   &kp TILDE,       LT3   LT4,   COL  NUM , COMBO_TERM_FAST)
+
+// smart-mouse, requires PR #1366
+ZMK_BEHAVIOR(smart_mouse, tri_state,
+    bindings = <&tog MOUSE>, <&none>, <&tog MOUSE>;
+    ignored-key-positions = <LT1 LT3 RT0 RT1 RT2 RT3 RT4 RM1 RM2 RM3 RM4 RB1 RB2 RB3 RB4 RH0 RH1  >;
+    ignored-layers = <MOUSE>;
+)
+ZMK_COMBO(mouse, &smart_mouse,  LT3 LT1,     COL NAV NUM, COMBO_TERM_FAST)
 
 
-ZMK_COMBO(minus,  &kp MINUS,      LM2 LM3,     COL NUM  , COMBO_TERM_FAST)
+ZMK_COMBO(minus,  &kp MINUS,      LB2 LB3,     COL NUM  , COMBO_TERM_FAST)
 ZMK_COMBO(plus,  &kp PLUS,      LM3 LM4 ,     COL NUM  , COMBO_TERM_FAST)
 
 

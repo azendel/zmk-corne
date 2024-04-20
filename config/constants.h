@@ -15,6 +15,7 @@
 #define ALT_SWITCH 6
 #define BOOK_SWITCH 7
 #define BETTER_NAV 8
+#define MOUSE 9
 
 // Modifier keys
 #define GL LGUI

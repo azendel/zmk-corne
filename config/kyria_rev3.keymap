@@ -1,6 +1,10 @@
 /*      
  * Copyright (c) 2023 The ZMK Contributors
- *
+ *      vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*.keymap",
+  command = "set filetype=cpp",
+})
+
  * SPDX-License-Identifier: MIT
  */
 
@@ -10,6 +14,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include "extra_keys.h"
 
 #include <dt-bindings/zmk/rgb.h>
 #include "constants.h"
@@ -25,6 +30,12 @@
 #include "../behaviors/mod-morph.dtsi"
 #include "../behaviors/mouse.dtsi"
 
+/* map kyria's extra keys */
+#define X_MT                    // top row, middle
+#define X_MM                    // middle row, middle
+#define X_MB  XXX XXX XXX XXX                 // bottom row, middle
+#define X_LH  XXX XXX  // thumb row, left
+#define X_RH  XXX XXX          // thumb row, right
 /* Nav cluster */
 
 // long-tap action on hold, short-tap action on all interrupts
@@ -108,16 +119,16 @@ ZMK_LAYER(colemak,
 //  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┼────────────┤────────────┤
     XXX         &kp Z        &kp X       &kp C     &kp D         &kp V  XXX XXX XXX XXX  &kp K       &kp H         &kp COMMA     &kp DOT      &kp FSLH  XXX
 // ╰──────────├───────────┴───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┴────────────╯────────────╯
-                                  XXX XXX  &lt FUNC ESC  &lt SYM RETURN &lt NAV SPACE                &smart_shft   SMART_NUM  XXX   XXX  XXX
+                                  XXX XXX  &lt SYM ESC  &lt FUNC RETURN &lt NAV SPACE                &smart_shft   SMART_NUM  XXX   XXX  XXX
 )
 
 ZMK_LAYER(symbol_layer,
 // ╭──────────╭───────────┬───────────┬───────────┬────────────┬────────────╮         ╭───────────┬─────────────┬─────────────┬────────────┬────────────┬────────────╮
-      XXX       &kp LBKT    &kp RBKT     &kp BSLH    &kp PIPE   &slack_react            &kp  TILDE  &kp AMPS      &kp STAR       &kp LPAR     &kp PLUS      XXX
+      XXX         XXX       XXX         XXX         XXX         &slack_react              XXX         XXX          XXX            XXX       XXX           XXX
+//  ──────────├───────────┼───────────┼───────────┼───────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┼────────────┤────────────┤
+    &kp BSPC      XXX        XXX         XXX          XXX     &kp K_CONTEXT_MENU          XXX      &kp DLLR      &kp  PRCNT     &kp CARET    XXX          XXX
 //  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┼────────────┤────────────┤
-    &kp BSPC    &kp LBRC    &kp RBRC     &kp UNDER   &kp EQUAL &kp K_CONTEXT_MENU       &kp GRAVE   &kp DLLR      &kp  PRCNT     &kp CARET    &kp RPAR      XXX
-//  ──────────├───────────┼───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┼────────────┤────────────┤
-      XXX         XXX        XXX         XXX          XXX        XXX    XXX XXX XXX XXX   XXX       &kp EXCL      &kp AT         &kp HASH     &kp MINUS     XXX
+      XXX         XXX        XXX         XXX          XXX        XXX    XXX XXX XXX XXX   XXX       XXX           &kp AT         &kp HASH     XXX         XXX
 // ╰──────────├───────────┴───────────┼───────────┼────────────┼────────────┤         ├───────────┼─────────────┼─────────────┼────────────┴────────────╯────────────╯
                           XXX     XXX     XXX     XXX     XXX              &mo FUNC     CANCEL     XXX     XXX     XXX    
 )
@@ -198,5 +209,18 @@ XXX     XXX          XXX           XXX         XXX         XXX  XXX XXX XXX XXX 
 // ╰───────────┴───────────┼───────────┼────────────┼────────────┤ ├───────────┼─────────────┼─────────────┼────────────┴────────────╯
 XXX XXX                             XXX            XXX         XXX             XXX         XXX           XXX    XXX  XXX
 )
+
+ZMK_LAYER(mouse,
+//╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮ ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ ╭──────╮
+    ___     ___           ___           ___           ___           ___             X_MT     &mkp_rg        &mkp_md        &mkp_lf       &msc_up     &msc_dn        ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___     ___           ___           ___           ___           ___             X_MM     ___           &mmv_lf       &mmv_dn        &mmv_up       &mmv_rg          ___
+//├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├──────┤
+    ___     ___           ___           ___           ___           ___             X_MB     ___           &fmmv_lf      &fmmv_dn       &fmmv_up      &fmmv_rg          ___
+//├──────┤ ╰─────────────┼─────────────┴─────────────┼─────────────┼─────────────┤ ├──────┤ ├─────────────┼─────────────┼─────────────┴───────────────────────────╯ ├──────┤
+    X_LH                                ___           ___           ___              X_MH     &mkp LCLK     &mkp RCLK     ___                                         X_RH
+//╰──────╯                                           ╰─────────────┴─────────────╯ ╰──────╯ ╰─────────────┴─────────────╯                                           ╰──────╯
+)
+
 
 
