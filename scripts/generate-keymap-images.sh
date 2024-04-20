@@ -12,7 +12,6 @@ parse() {
 		-z "$ROOT/config/$KBD_NAME".keymap \
 		-l \
 		"Colemak" \
-		"Symbols" \
 		"Navigation" \
 		"Numbers" \
 		"function" \

@@ -36,8 +36,7 @@
 // rZMK_COMBO(paste, &kp LC(V), LB1 LB2, COL)
 
 // PRINT SCREEN - PrintScreen, active on base layer
-ZMK_COMBO(printscreen, &kp PRINTSCREEN, RT3 RT4, COL)
-
+ZMK_COMBO(printscreen, &kp PRINTSCREEN, RT5 RT4, COL)
 // TMUX Prefix - active on base layer
 ZMK_COMBO(tmux, &kp TMUX, LM2 LM3, COL, HR_TIMEOUT)
 
@@ -70,7 +69,10 @@ ZMK_COMBO(lpar,  &kp LPAR,      RM1 RM2,     COL NUM  , COMBO_TERM_FAST)
 ZMK_COMBO(rpar,  &kp RPAR,      RM3 RM2 ,     COL NUM  , COMBO_TERM_FAST)
 ZMK_COMBO(excl,  &kp EXCL ,      RM4 RM3,     COL NUM  , COMBO_TERM_FAST)
 ZMK_COMBO(star,  &kp STAR,      RB4 RB3,     COL    , COMBO_TERM_FAST)
-ZMK_COMBO(grave,  &kp GRAVE,      RM1 RM3,     COL    , COMBO_TERM_FAST)
+ZMK_COMBO(dollar,  &kp DLLR,      RM1 RM3,     COL    , COMBO_TERM_FAST)
+ZMK_COMBO(grave,  &kp GRAVE,      RB1 RB3,     COL    , COMBO_TERM_FAST)
+ZMK_COMBO(percent,  &kp PRCNT,      RT1 RT3,     COL    , COMBO_TERM_FAST)
+ZMK_COMBO(caret, &kp CARET, RT3 RT4, COL)
 
 
 // left hand 
@@ -79,6 +81,8 @@ ZMK_COMBO(equal,   &kp EQUAL,     LM1  LM2,   COL  NUM , COMBO_TERM_FAST)
 ZMK_COMBO(zunder,   &kp UNDER,     LB1  LB2,   COL  NUM , COMBO_TERM_FAST)
 ZMK_COMBO(bslh,   &kp BSLH,       LB3   LB4,   COL  NUM , COMBO_TERM_FAST)
 ZMK_COMBO(tilde,   &kp TILDE,       LT3   LT4,   COL  NUM , COMBO_TERM_FAST)
+ZMK_COMBO(at,   &kp AT,     LM1  LM3,   COL  NUM , COMBO_TERM_FAST)
+ZMK_COMBO(hash,   &kp HASH,     LB1  LB3,   COL  NUM , COMBO_TERM_FAST)
 
 // smart-mouse, requires PR #1366
 ZMK_BEHAVIOR(smart_mouse, tri_state,

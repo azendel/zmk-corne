@@ -7,15 +7,14 @@
 // Layers
 // Must match order in which they are defined
 #define COL 0
-#define SYM 1
-#define NAV 2
-#define NUM 3
-#define FUNC 4
-#define SWITCH 5
-#define ALT_SWITCH 6
-#define BOOK_SWITCH 7
-#define BETTER_NAV 8
-#define MOUSE 9
+#define NAV 1
+#define NUM 2
+#define FUNC 3
+#define SWITCH 4
+#define ALT_SWITCH 5
+#define BOOK_SWITCH 6
+#define BETTER_NAV 7
+#define MOUSE 8
 
 // Modifier keys
 #define GL LGUI
