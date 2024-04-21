@@ -12,9 +12,9 @@ parse() {
 		-z "$ROOT/config/$KBD_NAME".keymap \
 		-l \
 		"Colemak" \
+		"function" \
 		"Navigation" \
 		"Numbers" \
-		"function" \
 		"switch" \
 		"alt switch" \
 		"win switch" \

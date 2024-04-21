@@ -7,9 +7,9 @@
 // Layers
 // Must match order in which they are defined
 #define COL 0
-#define NAV 1
-#define NUM 2
-#define FUNC 3
+#define FUNC 1
+#define NAV 2
+#define NUM 3
 #define SWITCH 4
 #define ALT_SWITCH 5
 #define BOOK_SWITCH 6
