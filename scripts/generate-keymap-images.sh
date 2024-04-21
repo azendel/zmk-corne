@@ -17,7 +17,6 @@ parse() {
 		"Numbers" \
 		"switch" \
 		"alt switch" \
-		"win switch" \
 		"BETTER_NAV" \
 		"mouse" >"$KMD/$KBD_NAME"_keymap.yaml \
 		; then

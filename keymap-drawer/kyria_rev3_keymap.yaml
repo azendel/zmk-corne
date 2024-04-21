@@ -205,7 +205,7 @@ layers:
   - ''
   - ''
   switch:
-  - ''
+  - {t: ▽, type: trans}
   - '&lock'
   - '&gui_7'
   - '&gui_8'
@@ -216,7 +216,7 @@ layers:
   - {t: '&ctrl_8', type: held}
   - {t: '&ctrl_9', type: held}
   - +
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - '&gui_4'
@@ -250,9 +250,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CTRL
-  - GUI
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   alt switch:
@@ -301,60 +301,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CTRL
-  - GUI
-  - ''
-  - ''
-  - ''
-  win switch:
-  - ''
-  - '&lock'
-  - '&gui_7'
-  - '&gui_8'
-  - '&gui_9'
-  - ''
-  - INSERT
-  - '&ctrl_7'
-  - '&ctrl_8'
-  - '&ctrl_9'
-  - +
-  - ''
-  - ''
-  - ''
-  - '&gui_4'
-  - '&gui_5'
-  - '&gui_6'
-  - SHIFT
-  - .
-  - '&ctrl_4'
-  - '&ctrl_5'
-  - '&ctrl_6'
-  - '&ctrl_0'
-  - ''
-  - ''
-  - ''
-  - '&gui_1'
-  - '&gui_2'
-  - '&gui_3'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - $$delete$$
-  - '&ctrl_1'
-  - '&ctrl_2'
-  - '&ctrl_3'
-  - '-'
-  - ''
-  - ''
-  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CTRL
-  - GUI
-  - ''
   - ''
   - ''
   BETTER_NAV:
@@ -400,12 +349,12 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {type: held}
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - ''
   mouse:
