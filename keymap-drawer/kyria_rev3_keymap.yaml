@@ -43,7 +43,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ESC, h: function}
+  - ''
   - {t: RETURN, h: function}
   - {t: '$$tabler:space$$', h: Navigation}
   - {t: SHIFT, h: sticky, s: CAPS WORD}
@@ -59,7 +59,7 @@ layers:
   - $$tabler:volume$$
   - $$tabler:player-track-next-filled$$
   - $$delete$$
-  - F7
+  - F5
   - F8
   - F9
   - F10
@@ -94,7 +94,7 @@ layers:
   - {t: ▽, type: trans}
   - ''
   - ''
-  - {type: held}
+  - {t: ▽, type: trans}
   - {type: held}
   - $$bt-clear$$
   - {t: ▽, type: trans}
@@ -120,7 +120,7 @@ layers:
   - '&mmv MOVE_Y(900)'
   - '&mmv MOVE_Y(-900)'
   - '&mmv MOVE_X(900)'
-  - PG UP XT MENU
+  - PAGE UP
   - HOME
   - $$tabler:arrow-big-left$$
   - $$tabler:arrow-big-down$$
