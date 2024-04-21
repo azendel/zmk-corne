@@ -21,8 +21,6 @@
 #define HOST_OS LINUX // Needed for unicode international_chars
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../chars/math.dtsi"
-#include "../chars/typography.dtsi"
 #include "../layouts/col_main.dtsi"
 #include "../behaviors/combos_50.dtsi"
 #include "../behaviors/hold-tap.dtsi"
